@@ -1,2 +1,3 @@
-# fCC_D3_CurrExp
-Sample D3 Project for fCC's Curriculum Expansion
+# fCC D3 Curriculum Expansion Example Project
+
+Sample Project for fCC's Curriculum Expansion: Learn D3 by Building a Map of Earth.
