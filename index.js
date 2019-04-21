@@ -1,3 +1,4 @@
+console.log("Starting script");
 // GeoJSON data to draw country outlines
 const mapURL = "https://d3js.org/world-110m.v1.json";
 
@@ -12,12 +13,12 @@ let svg = d3.select("#map")
             .append("svg")
             .attr("width", width)
             .attr("height", height);
-
+console.log("SVG appended");
 let projection = d3.geoMercator()
                    .scale(scale)
                    .translate([width / 2, height / 2]);
 
-let path = d3.geoPath(projection);
+let path = d3.geoPath();
 
 d3.json(mapURL, function(json) {
         console.log("In JSON call")
