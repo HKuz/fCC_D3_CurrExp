@@ -17,9 +17,10 @@ let projection = d3.geoMercator()
                    .scale(scale)
                    .translate([width / 2, height / 2]);
 
-let path = d3.geo.path().projection(projection);
+let path = d3.geoPath(projection);
 
 d3.json(mapURL, function(json) {
+        console.log("In JSON call")
         svg.selectAll("path")
            .data(json.features)
            .enter()
