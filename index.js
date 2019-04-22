@@ -24,9 +24,8 @@ d3.json(mapURL).then(function(json) {
                                   .features;
         svg.selectAll("path")
            .data(countries)
-           .enter()
-           .append("path")
-           .attr("d", path)
-           .style("fill", "gray")
-           .style("stroke", "white");
+           .enter().append("path")
+            .attr("d", path)
+            .style("fill", "gray")
+            .style("stroke", "white");
 });
