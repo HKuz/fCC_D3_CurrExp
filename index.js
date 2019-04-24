@@ -1,8 +1,8 @@
 // GeoJSON data to draw country outlines
-const mapURL = "https://d3js.org/world-110m.v1.json";
+const mapPath = "./worldTopo.json";
 
-// TODO: find data to use to color each country (population?)
-// World population source: https://databank.worldbank.org
+// World population data. Source: https://databank.worldbank.org
+const popPath = "./worldPopulation.csv";
 
 // Setup
 const format = d3.format(",");
@@ -22,7 +22,7 @@ const projection = d3.geoMercator()
 const path = d3.geoPath()
                .projection(projection);
 
-d3.json(mapURL).then(function(json) {
+d3.json(mapPath).then(function(json) {
   const countries = topojson.feature(json, json.objects.countries)
                             .features;
 
@@ -35,9 +35,10 @@ d3.json(mapURL).then(function(json) {
        .style("fill", "gray")
        .style("stroke", "white");
 
-  // svg.append('path')
-  //   .datum(topojson.mesh(data.features, (a, b) => a.id !== b.id))
-  //   .attr('class', 'names')
-  //   .attr('d', path);
+  // Create paths for each country
+  svg.append("path")
+     .datum(topojson.mesh(countries, (a, b) => a.id !== b.id))
+     .attr("class", "names")
+     .attr("d", path);
 
 }); // end d3.json promise
