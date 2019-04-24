@@ -2,6 +2,7 @@
 const mapURL = "https://d3js.org/world-110m.v1.json";
 
 // TODO: find data to use to color each country (population?)
+// World population source: https://databank.worldbank.org
 
 // Setup
 const width = 960;
