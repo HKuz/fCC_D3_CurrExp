@@ -5,9 +5,9 @@ const mapURL = "https://d3js.org/world-110m.v1.json";
 // World population source: https://databank.worldbank.org
 
 // Setup
-const width = 960;
-const height = 500;
-const scale = 130;
+const width = 1000;
+const height = 650;
+const scale = width / (2 * Math.PI);
 
 let svg = d3.select("#map")
             .append("svg")
@@ -18,7 +18,8 @@ let projection = d3.geoMercator()
                    .scale(scale)
                    .translate([width / 2, height / 2]);
 
-let path = d3.geoPath().projection(projection);
+let path = d3.geoPath()
+             .projection(projection);
 
 d3.json(mapURL).then(function(json) {
         const countries = topojson.feature(json, json.objects.countries)
