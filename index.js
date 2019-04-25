@@ -28,7 +28,7 @@ const color = d3.scaleThreshold()
                   1000000,
                   10000000,
                   50000000,
-                  100000000,
+                  75000000,
                   250000000,
                   1500000000
                 ])
@@ -73,4 +73,6 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
   //    .attr("class", "names")
   //    .attr("d", path);
 
+  // TODO: add tooltip
+  // TODO: add pan and zoom functionality
 });
