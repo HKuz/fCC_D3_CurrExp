@@ -25,12 +25,12 @@ const path = d3.geoPath()
 const color = d3.scaleThreshold()
                 .domain([
                   500000,
-                  1000000,
+                  5000000,
                   10000000,
+                  25000000,
                   50000000,
-                  75000000,
-                  250000000,
-                  1500000000
+                  100000000,
+                  1000000000
                 ])
                 .range(d3.schemeYlOrRd[8]);
 
@@ -44,8 +44,10 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
 
   // Find the max and min population values in the data to better understand it
   let popArray = population.map(d => +d.Population);
-  console.log(d3.min(popArray));  // 12,876 -> Nauru
-  console.log(d3.max(popArray));  // 1,386,395,000 -> China
+  const low = d3.min(popArray);
+  const high = d3.max(popArray);
+  // console.log(low);  // 12,876 -> Nauru
+  // console.log(high);  // 1,386,395,000 -> China
 
   // Create a mapping of country name to population
   let popMap = {};
