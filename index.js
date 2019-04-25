@@ -1,7 +1,7 @@
 // GeoJSON data to draw country outlines
 const mapPath = "./worldTopo.json";
 
-// World population data. Source: https://databank.worldbank.org
+// 2017 world population data. Source: https://databank.worldbank.org
 const popPath = "./worldPopulation.csv";
 
 // Setup
@@ -31,10 +31,14 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
   const json = values[1];
 
   // Create a mapping of country name to population
-  // const valueMap = population.forEach()
+  let popMap = {};
+  population.forEach(d => {
+    popMap[d.Name] = +d.Population
+  });
 
   const countries = topojson.feature(json, json.objects.countries)
                             .features;
+  countries.forEach(d => {console.log(d.properties.name)});
 
   svg.append("g")
      .attr("class", "countries")

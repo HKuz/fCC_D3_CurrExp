@@ -1437,7 +1437,7 @@
           ],
           "id": 31,
           "properties": {
-            "name": "Bolivia, Plurinational State of",
+            "name": "Bolivia",
             "color": "#aec7e8"
           }
         },
@@ -3605,7 +3605,7 @@
           ],
           "id": 73,
           "properties": {
-            "name": "Franch Guyana",
+            "name": "French Guyana",
             "color": "#d62728"
           }
         },
@@ -5990,7 +5990,7 @@
           ],
           "id": 123,
           "properties": {
-            "name": "Lao People's Democratic Republic",
+            "name": "Lao PDR",
             "color": "#ff7f0e"
           }
         },
@@ -10116,7 +10116,7 @@
           ],
           "id": 232,
           "properties": {
-            "name": "Virgin Islands, British",
+            "name": "British Virgin Islands",
             "color": "#1f77b4"
           }
         },
@@ -10141,7 +10141,7 @@
           ],
           "id": 233,
           "properties": {
-            "name": "Virgin Islands, U.S.",
+            "name": "U.S. Virgin Islands",
             "color": "#1f77b4"
           }
         },
@@ -10194,7 +10194,7 @@
           ],
           "id": 234,
           "properties": {
-            "name": "Viet Nam",
+            "name": "Vietnam",
             "color": "#ffbb78"
           }
         },
