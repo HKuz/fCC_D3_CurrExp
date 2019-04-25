@@ -82,14 +82,16 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
      })
      .style("opacity", 0.75)
      .on("mouseover", function(d) {
-       const pop = popMap[d.properties.name] ? popMap[d.properties.name] : "NA";
+       const pop = popMap[d.properties.name] ? format(popMap[d.properties.name]) : "NA";
+
+       // Create HTML string with country name and population info
        let dataPoint = "<div>" +
-                       "<strong>Country: </strong>" +
-                       "<span class='info'" + d.properties.name + "</span>"
-                       "<br />" +
-                       "<strong>Population: </strong>" +
-                       "<span class='info'" + pop + "</span>" +
+                       "<strong><span class='label'>Country: </span></strong>" +
+                       d.properties.name + "<br />" +
+                       "<strong><span class='label'>Population: </span></strong>" +
+                       pop +
                        "</div>";
+
        tooltip.transition()
          .style("opacity", .9);
 
@@ -97,24 +99,27 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
          .style("left", (d3.event.pageX + 5) + "px")
          .style("top", (d3.event.pageY - 28) + "px");
 
+       // Style the country when it's selected
        d3.select(this)
          .style("opacity", 1)
          .style("stroke-width", 3);
      })
      .on("mouseout", function(d) {
+       // Fade tooltip when mouse leaves
        tooltip.transition()
          .style("opacity", 0);
 
+       // Revert country to original style
        d3.select(this)
          .style("opacity", 0.75)
          .style("stroke-width", 0.5);
      });
 
   // Create paths for each country
-  // g.append("path")
-  //  .datum(topojson.mesh(countries, (a, b) => a.id !== b.id))
-  //  .attr("class", "names")
-  //  .attr("d", path);
+  g.append("path")
+   .datum(topojson.mesh(countries, (a, b) => a.id !== b.id))
+   .attr("class", "names")
+   .attr("d", path);
 
   // TODO: add tooltip
   // TODO: add pan and zoom functionality
