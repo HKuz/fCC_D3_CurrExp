@@ -22,7 +22,17 @@ const projection = d3.geoMercator()
 const path = d3.geoPath()
                .projection(projection);
 
-d3.json(mapPath).then(function(json) {
+// Create promises to retrieve CSV population data and geoJSON topography data
+const getCSVData = d3.csv(popPath);
+const getJSONData = d3.json(mapPath);
+
+Promise.all([getCSVData, getJSONData]).then(function(values) {
+  const population = values[0];
+  const json = values[1];
+
+  // Create a mapping of country name to population
+  // const valueMap = population.forEach()
+
   const countries = topojson.feature(json, json.objects.countries)
                             .features;
 
@@ -32,13 +42,16 @@ d3.json(mapPath).then(function(json) {
      .data(countries)
      .enter().append("path")
        .attr("d", path)
-       .style("fill", "gray")
-       .style("stroke", "white");
+       .style("stroke", "white")
+       .style("fill", d => {
+         // TODO: create scale and color countries based on population
+         return "gray"
+       });
 
   // Create paths for each country
-  svg.append("path")
-     .datum(topojson.mesh(countries, (a, b) => a.id !== b.id))
-     .attr("class", "names")
-     .attr("d", path);
+  // svg.append("path")
+  //    .datum(topojson.mesh(countries, (a, b) => a.id !== b.id))
+  //    .attr("class", "names")
+  //    .attr("d", path);
 
-}); // end d3.json promise
+});
