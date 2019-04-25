@@ -65,6 +65,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
   const tooltip = d3.select("#tooltip")
                     .classed("tooltip", true);
 
+  // Draw the map and add tooltip functionality
   g.selectAll(".countries")
      .data(countries)
    .enter().append("path")
@@ -99,7 +100,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
          .style("left", (d3.event.pageX + 5) + "px")
          .style("top", (d3.event.pageY - 28) + "px");
 
-       // Style the country when it's selected
+       // Change the style of the selected country
        d3.select(this)
          .style("opacity", 1)
          .style("stroke-width", 3);
@@ -116,11 +117,10 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
      });
 
   // Create paths for each country
-  g.append("path")
-   .datum(topojson.mesh(countries, (a, b) => a.id !== b.id))
-   .attr("class", "names")
-   .attr("d", path);
+  // g.append("path")
+  //  .datum(topojson.mesh(countries, (a, b) => a.id !== b.id))
+  //  .attr("class", "names")
+  //  .attr("d", path);
 
-  // TODO: add tooltip
   // TODO: add pan and zoom functionality
 });
