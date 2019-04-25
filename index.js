@@ -22,6 +22,9 @@ const projection = d3.geoMercator()
 const path = d3.geoPath()
                .projection(projection);
 
+// Create a group to hold the countries
+const g = svg.append("g");
+
 const color = d3.scaleThreshold()
                 .domain([
                   500000,
@@ -58,27 +61,60 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
   const countries = topojson.feature(json, json.objects.countries)
                             .features;
 
-  svg.append("g")
-     .attr("class", "countries")
-     .selectAll("path")
+  // Setup tooltip
+  const tooltip = d3.select("#tooltip")
+                    .classed("tooltip", true);
+
+  g.selectAll(".countries")
      .data(countries)
-     .enter().append("path")
-       .attr("d", path)
-       .style("stroke", "white")
-       .style("fill", d => {
-         const pop = popMap[d.properties.name];
-         if (pop) {
-           return color(pop);
-         } else {
-           return "gray"
-         }
-       });
+   .enter().append("path")
+     .attr("class", "countries")
+     .attr("d", path)
+     .style("stroke", "white")
+     .style("stroke-width", 0.5)
+     .style("fill", d => {
+       const pop = popMap[d.properties.name];
+       if (pop) {
+         return color(pop);
+       } else {
+         return "gray"
+       }
+     })
+     .style("opacity", 0.75)
+     .on("mouseover", function(d) {
+       const pop = popMap[d.properties.name] ? popMap[d.properties.name] : "NA";
+       let dataPoint = "<div>" +
+                       "<strong>Country: </strong>" +
+                       "<span class='info'" + d.properties.name + "</span>"
+                       "<br />" +
+                       "<strong>Population: </strong>" +
+                       "<span class='info'" + pop + "</span>" +
+                       "</div>";
+       tooltip.transition()
+         .style("opacity", .9);
+
+       tooltip.html(dataPoint)
+         .style("left", (d3.event.pageX + 5) + "px")
+         .style("top", (d3.event.pageY - 28) + "px");
+
+       d3.select(this)
+         .style("opacity", 1)
+         .style("stroke-width", 3);
+     })
+     .on("mouseout", function(d) {
+       tooltip.transition()
+         .style("opacity", 0);
+
+       d3.select(this)
+         .style("opacity", 0.75)
+         .style("stroke-width", 0.5);
+     });
 
   // Create paths for each country
-  // svg.append("path")
-  //    .datum(topojson.mesh(countries, (a, b) => a.id !== b.id))
-  //    .attr("class", "names")
-  //    .attr("d", path);
+  // g.append("path")
+  //  .datum(topojson.mesh(countries, (a, b) => a.id !== b.id))
+  //  .attr("class", "names")
+  //  .attr("d", path);
 
   // TODO: add tooltip
   // TODO: add pan and zoom functionality
