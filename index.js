@@ -42,6 +42,11 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
   const population = values[0];
   const json = values[1];
 
+  // Find the max and min population values in the data to better understand it
+  let popArray = population.map(d => +d.Population);
+  console.log(d3.min(popArray));  // 12,876 -> Nauru
+  console.log(d3.max(popArray));  // 1,386,395,000 -> China
+
   // Create a mapping of country name to population
   let popMap = {};
   population.forEach(d => {
