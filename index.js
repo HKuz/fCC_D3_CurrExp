@@ -1,4 +1,4 @@
-// GeoJSON data to draw country outlines
+// topoJSON data to draw country outlines
 const mapPath = "./worldTopo.json";
 
 // 2017 world population data. Source: https://databank.worldbank.org
