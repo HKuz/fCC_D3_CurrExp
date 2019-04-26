@@ -26,18 +26,6 @@ const path = d3.geoPath()
 // Create a group to hold the countries
 const g = svg.append("g");
 
-const color = d3.scaleThreshold()
-                .domain([
-                  500000,
-                  5000000,
-                  10000000,
-                  25000000,
-                  50000000,
-                  100000000,
-                  1000000000
-                ])
-                .range(d3.schemeYlOrRd[8]);
-
 // Create promises to retrieve CSV population data and geoJSON topography data
 const getCSVData = d3.csv(popPath);
 const getJSONData = d3.json(mapPath);
@@ -52,6 +40,18 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
   const high = d3.max(popArray);
   // console.log(low);  // 12,876 -> Nauru
   // console.log(high);  // 1,386,395,000 -> China
+
+  // Create a scale to map population value to a color
+  const color = d3.scaleThreshold()
+                  .domain([
+                    500000,
+                    5000000,
+                    10000000,
+                    25000000,
+                    50000000,
+                    100000000,
+                    1000000000])
+                  .range(d3.schemeYlOrRd[8]);
 
   // Create an object that maps country name to population
   let popMap = {};
@@ -117,7 +117,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
          .style("stroke-width", 0.5);
      });
 
-  // Add pan and zoom behavior
+  // Add map pan and zoom behavior
   const pad = 140;
 
   svg.call(d3.zoom()
@@ -129,4 +129,43 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
   function zoomed() {
     g.attr("transform", d3.event.transform);
   }
+
+  // Add legend to show population color thresholds
+  const w = width / 2 - 12;
+  const x_0 = width / 2;
+  const y_0 = height - 120;
+  const length = color.range().length;
+
+  // Create a group to hold the legend
+  const legend = svg.append("g")
+      .attr("transform", "translate(" + x_0 + ", " + y_0 +")");
+
+  const x = d3.scaleLinear()
+      .domain([1, length - 1])
+      .rangeRound([w / length, w * (length - 1) / length]);
+
+  // Create rectangles for each color bar
+  legend.selectAll("rect")
+    .data(color.range())
+    .join("rect")
+      .attr("height", 10)
+      .attr("x", (d, i) => x(i))
+      .attr("width", w / length)
+      .attr("fill", d => d);
+
+  // Add legend title
+  legend.append("text")
+      .attr("y", - 10)
+      .attr("fill", "black")
+      .attr("text-anchor", "start")
+      .attr("font-weight", "bold")
+      .text("Population Thresholds");
+
+  // Add tick marks with population values under color bars
+  legend.call(d3.axisBottom(x)
+      .tickSize(15)
+      .ticks(length - 1)
+      .tickFormat(i => format(color.domain()[i - 1])))
+    .select(".domain")
+      .remove();
 });
