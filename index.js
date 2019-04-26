@@ -52,7 +52,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
   // console.log(low);  // 12,876 -> Nauru
   // console.log(high);  // 1,386,395,000 -> China
 
-  // Create a mapping of country name to population
+  // Create an object that maps country name to population
   let popMap = {};
   population.forEach(d => {
     popMap[d.Name] = +d.Population
@@ -61,7 +61,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
   const countries = topojson.feature(json, json.objects.countries)
                             .features;
 
-  // Setup tooltip
+  // Set up tooltip
   const tooltip = d3.select("#tooltip")
                     .classed("tooltip", true);
 
@@ -103,7 +103,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
        // Change the style of the selected country
        d3.select(this)
          .style("opacity", 1)
-         .style("stroke-width", 3);
+         .style("stroke-width", 2);
      })
      .on("mouseout", function(d) {
        // Fade tooltip when mouse leaves
@@ -116,11 +116,16 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
          .style("stroke-width", 0.5);
      });
 
-  // Create paths for each country
-  // g.append("path")
-  //  .datum(topojson.mesh(countries, (a, b) => a.id !== b.id))
-  //  .attr("class", "names")
-  //  .attr("d", path);
+  // Add pan and zoom behavior
+  const pad = 140;
 
-  // TODO: add pan and zoom functionality
+  svg.call(d3.zoom()
+    .scaleExtent([1, 8])
+    .translateExtent([[0, -pad], [width, height + pad]])
+    .on("zoom", zoomed)
+  );
+
+  function zoomed() {
+    g.attr("transform", d3.event.transform);
+  }
 });
