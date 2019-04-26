@@ -7,7 +7,7 @@ const popPath = "./worldPopulation.csv";
 // Setup
 const format = d3.format(",");
 const width = 1000;
-const height = 650;
+const height = 700;
 const scale = width / (2 * Math.PI);
 
 const svg = d3.select("#map")
@@ -17,7 +17,8 @@ const svg = d3.select("#map")
 
 const projection = d3.geoMercator()
                      .scale(scale)
-                     .translate([width / 2, height / 2]);
+                     .translate([width / 2, height / 2])
+                     .center([0, 20]);
 
 const path = d3.geoPath()
                .projection(projection);
