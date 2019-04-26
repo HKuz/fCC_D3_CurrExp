@@ -1,5 +1,10 @@
 svg {
   background-color: #ADD8E6;
+  cursor: grab;
+}
+
+svg:active {
+  cursor: grabbing;
 }
 
 .tooltip {
