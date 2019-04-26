@@ -5,7 +5,7 @@ svg {
 .tooltip {
   position: absolute;
   padding: 10px;
-  color: "orange";
+  color: #fff;
   background-color: #b8b8b8;
   opacity: 0;
   border-radius: 5px;
