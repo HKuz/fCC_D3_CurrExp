@@ -35,7 +35,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
   const json = values[1];
 
   // Find the max and min population values in the data to better understand it
-  let popArray = population.map(d => +d.Population);
+  const popArray = population.map(d => +d.Population);
   const low = d3.min(popArray);
   const high = d3.max(popArray);
   // console.log(low);  // 12,876 -> Nauru
