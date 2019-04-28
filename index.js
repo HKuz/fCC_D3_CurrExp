@@ -1,5 +1,6 @@
 // topoJSON data to draw country outlines
-const mapPath = "./worldTopo.json";
+// const mapPath = "./worldTopo.json";
+const mapPath = "./naturalEarthTopoJSON.json";
 
 // 2017 world population data. Source: https://databank.worldbank.org
 const popPath = "./worldPopulation.csv";
@@ -74,7 +75,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
       .style("stroke", "white")
       .style("stroke-width", 0.5)
       .style("fill", d => {
-        const pop = popMap[d.properties.name];
+        const pop = popMap[d.properties.NAME];
         if (pop) {
           return color(pop);
         } else {
@@ -83,12 +84,12 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
       })
       .style("opacity", 0.75)
       .on("mouseover", function(d) {
-        const pop = popMap[d.properties.name] ? format(popMap[d.properties.name]) : "NA";
+        const pop = popMap[d.properties.NAME] ? format(popMap[d.properties.NAME]) : "NA";
 
         // Create HTML string with country name and population info
         let dataPoint = "<div>" +
             "<strong><span class='label'>Country: </span></strong>" +
-            d.properties.name + "<br />" +
+            d.properties.NAME + "<br />" +
             "<strong><span class='label'>Population: </span></strong>" +
             pop +
             "</div>";
