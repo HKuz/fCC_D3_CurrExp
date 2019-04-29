@@ -1,5 +1,5 @@
-// topoJSON data to draw country outlines. Source: Natural Earth
-// const mapPath = "./worldTopo.json";
+// topoJSON data to draw country outlines
+// Source: Natural Earth 1:110m Cultural Vectors; Admin 0 - Countries
 const mapPath = "./naturalEarthTopoJSON.json";
 
 // 2017 world population data. Source: https://databank.worldbank.org
