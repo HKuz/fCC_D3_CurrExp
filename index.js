@@ -1,4 +1,4 @@
-// topoJSON data to draw country outlines
+// topoJSON data to draw country outlines. Source: Natural Earth
 // const mapPath = "./worldTopo.json";
 const mapPath = "./naturalEarthTopoJSON.json";
 
@@ -39,8 +39,8 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
   const popArray = population.map(d => +d.Population);
   const low = d3.min(popArray);
   const high = d3.max(popArray);
-  // console.log(low);  // 12,876 -> Nauru
-  // console.log(high);  // 1,386,395,000 -> China
+  // console.log("Min population is: " + low);  // 56,171 -> Greenland
+  // console.log("Max population is: " + high);  // 1,386,395,000 -> China
 
   // Create a scale to map population value to a color
   const color = d3.scaleThreshold()
@@ -54,10 +54,10 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
         1000000000])
       .range(d3.schemeYlOrRd[8]);
 
-  // Create an object that maps country name to population
+  // Create an object that maps country ID to population
   let popMap = {};
   population.forEach(d => {
-    popMap[d.Name] = +d.Population
+    popMap[d.ID] = +d.Population
   });
 
   const countries = topojson.feature(json, json.objects.countries).features;
@@ -75,7 +75,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
       .style("stroke", "white")
       .style("stroke-width", 0.5)
       .style("fill", d => {
-        const pop = popMap[d.properties.NAME];
+        const pop = popMap[d.properties["ADM0_A3"]];
         if (pop) {
           return color(pop);
         } else {
@@ -84,7 +84,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
       })
       .style("opacity", 0.75)
       .on("mouseover", function(d) {
-        const pop = popMap[d.properties.NAME] ? format(popMap[d.properties.NAME]) : "NA";
+        const pop = popMap[d.properties["ADM0_A3"]] ? format(popMap[d.properties["ADM0_A3"]]) : "NA";
 
         // Create HTML string with country name and population info
         let dataPoint = "<div>" +
