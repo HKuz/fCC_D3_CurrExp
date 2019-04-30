@@ -12,7 +12,7 @@ ABW,Aruba,105264
 AUS,Australia,24601860
 AUT,Austria,8797566
 AZE,Azerbaijan,9854033
-BHS,Bahamas,395361
+BHS,"Bahamas, The",395361
 BHR,Bahrain,1492584
 BGD,Bangladesh,164669751
 BRB,Barbados,285719
@@ -31,21 +31,22 @@ BRN,Brunei Darussalam,428697
 BGR,Bulgaria,7075947
 BFA,Burkina Faso,19193382
 BDI,Burundi,10864245
-CPV,Cape Verde,546388
+CPV,Cabo Verde,546388
 KHM,Cambodia,16005373
 CMR,Cameroon,24053727
 CAN,Canada,36708083
 CYM,Cayman Islands,61559
 CAF,Central African Republic,4659080
 TCD,Chad,14899994
+CHI,Channel Islands,165314
 CHL,Chile,18054726
 CHN,China,1386395000
 COL,Colombia,49065615
 COM,Comoros,813912
-COD,Democratic Republic of Congo,81339988
-COG,Congo,5260750
+COD,"Congo, Dem. Rep.",81339988
+COG,"Congo, Rep.",5260750
 CRI,Costa Rica,4905769
-CIV,Côte d'Ivoire,24294750
+CIV,Cote d'Ivoire,24294750
 HRV,Croatia,4124531
 CUB,Cuba,11484636
 CUW,Curacao,160175
@@ -56,11 +57,12 @@ DJI,Djibouti,956985
 DMA,Dominica,73925
 DOM,Dominican Republic,10766998
 ECU,Ecuador,16624858
-EGY,Egypt,97553151
+EGY,"Egypt, Arab Rep.",97553151
 SLV,El Salvador,6377853
 GNQ,Equatorial Guinea,1267689
 ERI,Eritrea,..
 EST,Estonia,1317384
+SWZ,Eswatini,1367254
 ETH,Ethiopia,104957438
 FRO,Faroe Islands,49290
 FJI,Fiji,905502
@@ -68,10 +70,11 @@ FIN,Finland,5508214
 FRA,France,67105513
 PYF,French Polynesia,283007
 GAB,Gabon,2025137
-GMB,Gambia,2100568
+GMB,"Gambia, The",2100568
 GEO,Georgia,3728004
 DEU,Germany,82685827
 GHA,Ghana,28833629
+GIB,Gibraltar,34571
 GRC,Greece,10753531
 GRL,Greenland,56171
 GRD,Grenada,107825
@@ -82,12 +85,12 @@ GNB,Guinea-Bissau,1861283
 GUY,Guyana,777859
 HTI,Haiti,10981229
 HND,Honduras,9265067
-HKG,Hong Kong,7391700
+HKG,"Hong Kong SAR, China",7391700
 HUN,Hungary,9787966
 ISL,Iceland,343400
 IND,India,1339180127
 IDN,Indonesia,263991379
-IRN,Iran,81162788
+IRN,"Iran, Islamic Rep.",81162788
 IRQ,Iraq,38274618
 IRL,Ireland,4811321
 IMN,Isle of Man,84287
@@ -99,9 +102,11 @@ JOR,Jordan,9702353
 KAZ,Kazakhstan,18037776
 KEN,Kenya,49699862
 KIR,Kiribati,116398
+PRK,"Korea, Dem. People’s Rep.",25490965
+KOR,"Korea, Rep.",51466201
 XKX,Kosovo,1830700
 KWT,Kuwait,4136528
-KGZ,Kyrgyzstan,6198200
+KGZ,Kyrgyz Republic,6198200
 LAO,Lao PDR,6858160
 LVA,Latvia,1942248
 LBN,Lebanon,6082357
@@ -111,8 +116,7 @@ LBY,Libya,6374616
 LIE,Liechtenstein,37922
 LTU,Lithuania,2828403
 LUX,Luxembourg,596336
-MAC,Macao,622567
-MKD,Macedonia,2083160
+MAC,"Macao SAR, China",622567
 MDG,Madagascar,25570895
 MWI,Malawi,18622104
 MYS,Malaysia,31624264
@@ -123,7 +127,7 @@ MHL,Marshall Islands,53127
 MRT,Mauritania,4420184
 MUS,Mauritius,1264613
 MEX,Mexico,129163276
-FSM,"Micronesia, Federated States of",105544
+FSM,"Micronesia, Fed. Sts.",105544
 MDA,Moldova,3549196
 MCO,Monaco,38695
 MNG,Mongolia,3075647
@@ -140,13 +144,12 @@ NZL,New Zealand,4793900
 NIC,Nicaragua,6217581
 NER,Niger,21477348
 NGA,Nigeria,190886311
-PRK,North Korea,25490965
+MKD,North Macedonia,2083160
 MNP,Northern Mariana Islands,55144
 NOR,Norway,5276968
 OMN,Oman,4636262
 PAK,Pakistan,197015955
 PLW,Palau,21729
-PSE,"Palestine, State of",4684777
 PAN,Panama,4098587
 PNG,Papua New Guinea,8251162
 PRY,Paraguay,6811297
@@ -169,22 +172,20 @@ SYC,Seychelles,95843
 SLE,Sierra Leone,7557212
 SGP,Singapore,5612253
 SXM,Sint Maarten (Dutch part),41109
-SVK,Slovakia,5439232
+SVK,Slovak Republic,5439232
 SVN,Slovenia,2066388
 SLB,Solomon Islands,611343
 SOM,Somalia,14742523
 ZAF,South Africa,56717156
-KOR,South Korea,51466201
-SSD,South Sudan,12575714
+SDS,South Sudan,12575714
 ESP,Spain,46593171
 LKA,Sri Lanka,21444000
-KNA,Saint Kitts and Nevis,55345
-LCA,Saint Lucia,178844
-MAF,Saint Martin (French part),32125
-VCT,Saint Vincent and the Grenadines,109897
+KNA,St. Kitts and Nevis,55345
+LCA,St. Lucia,178844
+MAF,St. Martin (French part),32125
+VCT,St. Vincent and the Grenadines,109897
 SDN,Sudan,40533330
 SUR,Suriname,563402
-SWZ,Swaziland,1367254
 SWE,Sweden,10057698
 CHE,Switzerland,8450851
 SYR,Syrian Arab Republic,18269868
@@ -207,9 +208,10 @@ USA,United States,325147121
 URY,Uruguay,3456750
 UZB,Uzbekistan,32387200
 VUT,Vanuatu,276244
-VEN,Venezuela,31977065
+VEN,"Venezuela, RB",31977065
 VNM,Vietnam,95540800
-VIR,U.S. Virgin Islands,107268
-YEM,Yemen,28250420
+VIR,Virgin Islands (U.S.),107268
+PSE,West Bank and Gaza,4684777
+YEM,"Yemen, Rep.",28250420
 ZMB,Zambia,17094130
 ZWE,Zimbabwe,16529904
