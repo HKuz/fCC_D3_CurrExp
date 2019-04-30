@@ -6,7 +6,7 @@ const mapPath = "./naturalEarth50TopoJSON.json";
 const popPath = "./worldPopulation.csv";
 
 // ISO 3166-1 Alpha 3 country code identifier
-const code = "ADM0_A3";
+const idCode = "ADM0_A3";
 
 // Setup
 const format = d3.format(",");
@@ -67,6 +67,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
 
   // Set up tooltip
   const tooltip = d3.select("#tooltip")
+      .style("display", "none")
       .classed("tooltip", true);
 
   // Draw the map and add tooltip functionality
@@ -78,7 +79,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
       .style("stroke", "white")
       .style("stroke-width", 0.5)
       .style("fill", d => {
-        const pop = popMap[d.properties[code]];
+        const pop = popMap[d.properties[idCode]];
         if (pop) {
           return color(pop);
         } else {
@@ -87,7 +88,17 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
       })
       .style("opacity", 0.75)
       .on("mouseover", function(d) {
-        const pop = popMap[d.properties[code]] ? format(popMap[d.properties[code]]) : "NA";
+        tooltip.transition()
+          .style("display", "inline")
+          .style("opacity", .9);
+
+        // Change the style of the selected country
+        d3.select(this)
+          .style("opacity", 1)
+          .style("stroke-width", 2);
+      })
+      .on("mousemove", function(d) {
+        const pop = popMap[d.properties[idCode]] ? format(popMap[d.properties[idCode]]) : "NA";
 
         // Create HTML string with country name and population info
         let dataPoint = "<div>" +
@@ -97,22 +108,15 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
             pop +
             "</div>";
 
-        tooltip.transition()
-          .style("opacity", .9);
-
         tooltip.html(dataPoint)
-          .style("left", (d3.event.pageX + 5) + "px")
-          .style("top", (d3.event.pageY - 28) + "px");
-
-        // Change the style of the selected country
-        d3.select(this)
-          .style("opacity", 1)
-          .style("stroke-width", 2);
+          .style("left", (d3.event.pageX + 32) + "px")
+          .style("top", (d3.event.pageY + 32) + "px");
       })
       .on("mouseout", function(d) {
         // Fade tooltip when mouse leaves
         tooltip.transition()
-          .style("opacity", 0);
+          .style("opacity", 0)
+          .style("display", "none");
 
         // Revert country to original style
         d3.select(this)
@@ -134,7 +138,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
   }
 
   // Add legend to show population color thresholds
-  const w = width / 2 - 12;
+  const w = width / 2 - 4;
   const x_0 = width / 2;
   const y_0 = height - 120;
   const length = color.range().length;
