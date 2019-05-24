@@ -1,6 +1,6 @@
 HTML setup
 [x] explain D3, title
-[ ] add script links to D3, topoJSON, and our script
+[x] add script links to D3, topoJSON, and our script
 [ ] H1 title
 [ ] div to hold map
 
