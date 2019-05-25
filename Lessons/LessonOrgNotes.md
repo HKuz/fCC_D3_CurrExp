@@ -5,20 +5,22 @@ HTML setup
 - [x] div to hold map
 
 D3 basic setup
-- [ ] JS lines 13-14
+- [x] JS lines 9-10
 - [ ] SVG JS lines 17-21
 - [ ] style CSS lines 1-2
 
 Draw map
 - [ ] data JS lines 1-7
 - [ ] HTML add footer with sources
-- [ ] projection [ ] scale JS line 15, functionality JS lines 22-26
-- [ ] path JS lines 27-29
+- [ ] projection scale JS line 11
+- [ ] projection functionality JS lines 22-26
+- [ ] path functionality JS lines 27-29
 - [ ] group to hold countries JS lines 30-32
-- [ ] promises: setup JS lines 33-36, execute JS lines 37-40
+- [ ] promises: setup JS lines 33-36
+- [ ] promises: execute JS lines 37-40
 - [ ] threshold scale JS lines 41-59
-- [ ] map ID to pop JS lines 60-65
-- [ ] countries topojson features JS line 66
+- [ ] object to map ID to pop JS lines 60-65
+- [ ] topoJSON: countries features JS line 66
 - [ ] map functionality JS lines 73-89
 
 Tooltip
