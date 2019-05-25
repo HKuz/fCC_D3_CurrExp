@@ -5,14 +5,14 @@ const mapPath = "./naturalEarth50TopoJSON.json";
 // 2017 world population data. Source: https://databank.worldbank.org
 const popPath = "./worldPopulation.csv";
 
-// ISO 3166-1 Alpha 3 country code identifier
-const idCode = "ADM0_A3";
-
 // Setup
-const format = d3.format(",");
 const width = 1000;
 const height = 700;
 const scale = width / (2 * Math.PI);
+const format = d3.format(",");
+
+// ISO 3166-1 Alpha 3 country code identifier
+const idCode = "ADM0_A3";
 
 const svg = d3.select("#map")
     .append("svg")
@@ -65,7 +65,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
 
   const countries = topojson.feature(json, json.objects.countries).features;
 
-  // Set up tooltip
+  // Tooltip setup
   const tooltip = d3.select("#tooltip")
       .style("display", "none")
       .classed("tooltip", true);
