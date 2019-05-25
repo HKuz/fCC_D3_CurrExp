@@ -6,8 +6,8 @@ HTML setup
 
 D3 basic setup
 - [x] JS lines 9-10
-- [ ] SVG JS lines 17-21
-- [ ] style CSS lines 1-2
+- [x] SVG JS lines 17-21
+- [x] style CSS lines 1-2
 
 Draw map
 - [ ] data JS lines 1-7
