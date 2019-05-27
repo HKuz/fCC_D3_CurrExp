@@ -5,12 +5,18 @@ HTML setup
 - [x] div to hold map
 
 D3 basic setup
-- [x] JS lines 9-10
+- [x] SVG height and width JS lines 8-10
 - [x] SVG JS lines 17-21
 - [x] style CSS lines 1-2
 
+Hiatus to explain SVG coordinates
+- [ ]
+
+Add map data
+- [ ] mapPath JS lines 1-4
+- [ ] popPath JS lines 5-7
+
 Draw map
-- [x] data JS lines 1-7
 - [x] HTML add footer with sources
 - [ ] projection scale JS line 11
 - [ ] projection functionality JS lines 22-26
