@@ -10,7 +10,7 @@ D3 basic setup
 - [x] style CSS lines 1-2
 
 Draw map
-- [ ] data JS lines 1-7
+- [x] data JS lines 1-7
 - [ ] HTML add footer with sources
 - [ ] projection scale JS line 11
 - [ ] projection functionality JS lines 22-26
