@@ -1,8 +1,8 @@
 HTML setup
-- [x] explain D3, title
-- [x] add script links to D3, topoJSON, and our script
-- [x] H1 title
-- [x] div to hold map
+- [x] explain D3, title (0010)
+- [x] add script links to D3, topoJSON, and our script (0020-0040)
+- [x] H1 title (0050)
+- [x] div to hold map (0060)
 
 D3 basic setup
 - [x] SVG height and width JS lines 8-10
@@ -10,7 +10,9 @@ D3 basic setup
 - [x] style CSS lines 1-2
 
 Hiatus to explain SVG coordinates
-- [ ]
+- [ ] Origin in upper-left, place elements with `x, y` coords
+- [ ] Create a rectangle
+- [ ] Draw a path
 
 Add map data
 - [ ] mapPath JS lines 1-4
