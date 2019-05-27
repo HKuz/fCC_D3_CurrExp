@@ -11,7 +11,7 @@ D3 basic setup
 
 Draw map
 - [x] data JS lines 1-7
-- [ ] HTML add footer with sources
+- [x] HTML add footer with sources
 - [ ] projection scale JS line 11
 - [ ] projection functionality JS lines 22-26
 - [ ] path functionality JS lines 27-29
