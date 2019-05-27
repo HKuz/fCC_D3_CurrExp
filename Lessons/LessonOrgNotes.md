@@ -5,14 +5,14 @@ HTML setup
 - [x] div to hold map (0060)
 
 D3 basic setup
-- [x] SVG height and width JS lines 8-10
-- [x] SVG JS lines 17-21
-- [x] style CSS lines 1-2
+- [x] SVG height and width JS lines 8-10 (0070)
+- [x] SVG JS lines 17-21 (0080-0100)
+- [x] style CSS lines 1-2 (0110)
 
 Hiatus to explain SVG coordinates
-- [ ] Origin in upper-left, place elements with `x, y` coords
-- [ ] Create a rectangle
-- [ ] Draw a path
+- [x] overview of SVG, create a rectangle
+- [ ] origin in upper-left, place elements with `x, y` coords, position rectangle
+- [ ] draw a path
 
 Add map data
 - [ ] mapPath JS lines 1-4
