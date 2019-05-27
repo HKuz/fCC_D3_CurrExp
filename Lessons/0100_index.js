@@ -15,4 +15,7 @@ the name of the attribute as a string and the second argument is the value for i
 Chain two `attr` methods right after the `append` one. The first should add a
 `"width"` attribute with the value set to your `width` variable. The second
 should add a `"height"` attribute with the value set to your `height` variable.
+
+Since there isn't a unit specified with these values, D3 will interpret them as
+pixels by default.
 */
