@@ -1,3 +1,6 @@
+// topoJSON data to draw country outlines
+// Source: Natural Earth 1:50m Cultural Vectors, Admin 0 - Countries
+
 
 
 /*
