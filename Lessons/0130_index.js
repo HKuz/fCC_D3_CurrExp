@@ -4,14 +4,13 @@
 
 
 /*
-With the project files set up, it's time to start laying out the map. First, you
-need the data that will describe the shape of the countries. This information,
-along with various metadata, is saved in a specific form of `JSON` - either
-GeoJSON or TopoJSON.
+The first step to creating a map is getting the data that will describe the shape
+of the countries. This information, along with various metadata, is saved in a
+specific form of `JSON` - either GeoJSON or TopoJSON.
 
-GeoJSON is a data structure that holds geographic features - these can be points
-(a city), lines (a street), or complicated multipolygons (a boundary) - along
-with their coordinates.
+GeoJSON is a data structure that holds geographic features. They can include
+points (such as a city), lines (a street), or complicated multipolygons (a
+boundary) - along with their coordinates.
 
 TopoJSON is an extension of GeoJSON, but it gets rid of duplication. A shared
 boundary between two countries would be saved only once as an arc. This results
