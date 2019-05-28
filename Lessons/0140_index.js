@@ -1,11 +1,11 @@
 // Setup
-const width = 1000;
-const height = 700;
+const svgWidth = 1000;
+const svgHeight = 700;
 
 const svg = d3.select("#map")
     .append("svg")
-    .attr("width", width)
-    .attr("height", height);
+    .attr("width", svgWidth)
+    .attr("height", svgHeight);
 
 svg.append("rect")
 
