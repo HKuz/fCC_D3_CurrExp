@@ -17,9 +17,9 @@ attributes - namely `x`, `y`, `height`, and `width`. You have to specify where S
 should start drawing the rectangle (the `x` and `y`), and how big the rectangle
 is (the `height` and `width`).
 
-SVG uses a basic `x, y` coordinate system to position elements, and the origin is
-in the top-left corner. This means higher `x` values push an element farther to
-the right, and higher `y` values push it farther down.
+SVG uses a basic `x, y` coordinate system to position elements, and the origin -
+the (0, 0) coordinate - is in the top-left corner. This means that higher `x`
+values push an element more to the right, and higher `y` values push it down.
 
 Chain an `.attr()` method to your `svg.append("rect")` code which adds an `"x"`
 attribute with the value of `400`.
