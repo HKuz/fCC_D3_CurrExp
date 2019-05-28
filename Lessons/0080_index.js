@@ -1,21 +1,23 @@
 // Setup
-const width = 1000;
-const height = 700;
+const svgWidth = 1000;
+const svgHeight = 700;
 
 
 /*
 Since you linked to a local copy of the D3 script in the `HTML` file, all of D3's
-methods are available for you to use here.
+methods are now available for you to use.
 
-There's a `d3.select()` method that allows you to grab an HTML element in the DOM
-and work with it. You pass the method the item you want in quotes - D3 accepts
-the same selectors that CSS does. For example, you would select an item with a
-class `hello` with `d3.select(".hello")`.
+D3 has a `.select()` method that allows you to grab an HTML element in the DOM
+and work with it. The method takes the HTML item you want in quotes - this can be
+the name of the element or any valid CSS selector. The first match is returned.
 
-You'll need the method here to add the `svg` element to the page, which is what
-will hold the map.
+For example, you would select an item with a class `hello` with
+`d3.select(".hello")`.
 
-Using the `const` keyword, declare a variable called `svg`. Set it equal to the
+You'll need the method here to add the `svg` element to the page, (this will hold
+your map).
+
+Using the `const` keyword, declare a variable named `svg`. Set it equal to the
 D3 `select` method, and pass the method the `map` `id` of the `div` you
 created.
 */
