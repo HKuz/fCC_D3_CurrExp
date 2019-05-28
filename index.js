@@ -6,9 +6,9 @@ const mapPath = "./naturalEarth50TopoJSON.json";
 const popPath = "./worldPopulation.csv";
 
 // Setup
-const width = 1000;
-const height = 700;
-const scale = width / (2 * Math.PI);
+const svgWidth = 1000;
+const svgHeight = 700;
+const scale = svgWidth / (2 * Math.PI);
 const format = d3.format(",");
 
 // ISO 3166-1 Alpha 3 country code identifier
@@ -16,12 +16,12 @@ const idCode = "ADM0_A3";
 
 const svg = d3.select("#map")
     .append("svg")
-    .attr("width", width)
-    .attr("height", height);
+    .attr("width", svgWidth)
+    .attr("height", svgHeight);
 
 const projection = d3.geoMercator()
     .scale(scale)
-    .translate([width / 2, height / 2])
+    .translate([svgWidth / 2, svgHeight / 2])
     .center([0, 20]);
 
 const path = d3.geoPath()
@@ -129,7 +129,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
 
   svg.call(d3.zoom()
       .scaleExtent([1, 8])
-      .translateExtent([[0, -pad], [width, height + pad]])
+      .translateExtent([[0, -pad], [svgWidth, svgHeight + pad]])
       .on("zoom", zoomed)
   );
 
@@ -138,9 +138,9 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
   }
 
   // Add legend to show population color thresholds
-  const w = width / 2 - 4;
-  const x_0 = width / 2;
-  const y_0 = height - 120;
+  const w = svgWidth / 2 - 4;
+  const x_0 = svgWidth / 2;
+  const y_0 = svgHeight - 120;
   const length = color.range().length;
 
   // Create a group to hold the legend
