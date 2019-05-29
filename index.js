@@ -8,7 +8,7 @@ const popPath = "./worldPopulation.csv";
 // Setup
 const svgWidth = 1000;
 const svgHeight = 700;
-const scale = svgWidth / (2 * Math.PI);
+// const scale = svgWidth / (2 * Math.PI);
 const format = d3.format(",");
 
 // ISO 3166-1 Alpha 3 country code identifier
@@ -20,9 +20,9 @@ const svg = d3.select("#map")
     .attr("height", svgHeight);
 
 const projection = d3.geoMercator()
-    .scale(scale)
+    // .scale(scale)
     .translate([svgWidth / 2, svgHeight / 2])
-    .center([0, 20]);
+    // .center([0, 20]);
 
 const path = d3.geoPath()
     .projection(projection);
