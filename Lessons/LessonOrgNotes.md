@@ -17,8 +17,8 @@ Hiatus to explain a few SVG properties and shapes
 - [ ] draw a path
 
 Add map data
-- [ ] mapPath JS lines 1-4
-- [ ] popPath JS lines 5-7
+- [x] mapPath JS lines 1-4
+- [x] popPath JS lines 5-7
 
 Draw map
 - [x] HTML add footer with sources
