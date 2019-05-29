@@ -1,4 +1,4 @@
-// topoJSON data to draw country outlines
+// TopoJSON data to draw country outlines
 // Source: Natural Earth 1:50m Cultural Vectors, Admin 0 - Countries
 const mapPath = "./naturalEarth50TopoJSON.json";
 
@@ -44,6 +44,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
   const high = d3.max(popArray);
   // console.log("Min population is: " + low);  // 12,876 -> Nauru
   // console.log("Max population is: " + high);  // 1,386,395,000 -> China
+  // console.log(d3.extent(popArray));  // [12876, 1386395000]
 
   // Create a scale to map population value to a color
   const color = d3.scaleThreshold()
@@ -155,9 +156,9 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
   legend.selectAll("rect")
     .data(color.range())
     .join("rect")
-      .attr("height", 10)
       .attr("x", (d, i) => x(i))
       .attr("width", w / length)
+      .attr("height", 10)
       .attr("fill", d => d);
 
   // Add legend title
