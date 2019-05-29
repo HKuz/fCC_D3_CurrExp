@@ -11,7 +11,9 @@ D3 basic setup
 
 Hiatus to explain SVG coordinates
 - [x] overview of SVG, create a rectangle
-- [ ] origin in upper-left, place elements with `x, y` coords, position rectangle
+- [x] origin in upper-left, place elements with `x, y` coords, position rectangle
+- [x] rectangle height/width
+- [ ] difference between CSS styles, attr, and style methods
 - [ ] draw a path
 
 Add map data
