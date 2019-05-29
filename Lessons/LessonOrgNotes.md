@@ -9,11 +9,11 @@ D3 basic setup
 - [x] SVG JS lines 17-21 (0080-0100)
 - [x] style CSS lines 1-2 (0110)
 
-Hiatus to explain SVG coordinates
+Hiatus to explain a few SVG properties and shapes
 - [x] overview of SVG, create a rectangle
 - [x] origin in upper-left, place elements with `x, y` coords, position rectangle
 - [x] rectangle height/width
-- [ ] difference between CSS styles, attr, and style methods
+- [x] difference between CSS styles, attr, and style methods
 - [ ] draw a path
 
 Add map data
