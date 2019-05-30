@@ -32,6 +32,7 @@ Draw map
 - [ ] object to map ID to pop JS lines 60-65
 - [ ] topoJSON: countries features JS line 66
 - [ ] map functionality JS lines 73-89
+- [ ] CSS stylesheet .countries stroke
 
 Tooltip
 - [ ] HTML div to hold tooltip
