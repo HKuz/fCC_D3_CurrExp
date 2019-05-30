@@ -77,7 +77,7 @@ Promise.all([getCSVData, getJSONData]).then(function(values) {
     .enter().append("path")
       .attr("class", "countries")
       .attr("d", path)
-      .style("stroke", "white")
+      // .style("stroke", "white")  // Moved to CSS
       .style("stroke-width", 0.5)
       .style("fill", d => {
         const pop = popMap[d.properties[idCode]];
