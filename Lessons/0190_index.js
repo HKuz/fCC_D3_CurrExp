@@ -16,5 +16,11 @@ svg.append("rect")
 
 
 /*
+Another basic SVG shape that is critical for drawing maps in D3 is the `path`
+element. You use it to create lines, curves, arcs, and polygons, among other
+things.
 
+A `path` element has one attribute, `d`, that holds a sequence of commands for
+what to draw (a horizontal line, a curve, etc.) and the coordinates for where
+to place that segment on the `svg`.
 */
