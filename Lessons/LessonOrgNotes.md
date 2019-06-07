@@ -15,7 +15,7 @@ Hiatus to explain a few SVG properties and shapes
 - [x] origin in upper-left, place elements with `x, y` coords, position rectangle (0140-0150)
 - [x] rectangle height/width (0160-0170)
 - [x] difference between CSS styles, attr, and style methods (0180)
-- [ ] draw a path
+- [x] draw a path (0190-0240)
 
 Add map data
 - [x] mapPath JS lines 1-4
