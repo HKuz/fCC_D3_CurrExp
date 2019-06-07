@@ -16,8 +16,9 @@ information (it doesn't cut out smaller Caribbean islands) while keeping the fil
 size reasonable.
 
 The population numbers you'll show in the map are 2017 data in a comma-separated
-value (CSV) file we downloaded from the World Bank website. This file is in the
-project folder under the name `worldPopulation.csv`.
+value (CSV) file we downloaded from the World Bank website. It has each country's
+name, population number, and a three-letter country code identifier. This file is
+in the project folder under the name `worldPopulation.csv`.
 
 Using the `const` keyword, create a variable named `popPath`, and set it to the
 path for this population data file.
