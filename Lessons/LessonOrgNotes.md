@@ -23,8 +23,7 @@ Add map data
 
 Draw map
 - [x] HTML add footer with sources (0270)
-- [ ] projection scale JS line 11
-- [ ] projection functionality JS lines 22-26
+- [ ] projection scale JS line 11, functionality JS lines 22-26 (0280)
 - [ ] path functionality JS lines 27-29
 - [ ] group to hold countries JS lines 30-32
 - [ ] promises: setup JS lines 33-36
