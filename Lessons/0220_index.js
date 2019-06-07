@@ -15,16 +15,20 @@ svg.append("rect")
     .attr("fill", "yellow");
 
 svg.append("path")
-    .attr("d", "M20 20 H 90")
+    .attr("stroke", "orange")
+    .attr("d", "M 20 20")
 
 
 /*
-The final command will tell the page to draw a vertical line. This command is
-similar to drawing a horizontal line. The capital letter, or absolute coordinate
-version syntax is `V y` and the lowercase letter, or relative version is `v dy`.
-The `y` is a fixed coordinate to draw to, the `dy` is the number of units to draw
-the line up or down.
+The next command you'll add will draw a horizontal line. The command is `H x`,
+where the `x` is the `x` coordinate where to stop drawing. In other words, this
+command draws a line from your current position (at the point (20, 20)) to the
+given `x` value, keeping the `y` position the same.
 
-Edit the value for your `d` attribute so after the horizontal line, you draw a
-vertical line to the absolute `y` coordinate of `90`.
+Edit the value for your `d` attribute so after the `M 20 20` there's a space,
+then the command to draw a horizontal line to the `x` coordinate of `90`.
+
+Note that if you were using the lowercase version of this command, you'd write
+it `h dx`. The page would draw a line `dx` units to the right (if  `dx` were
+positive, to the left if it were negative) starting from your current position.
 */

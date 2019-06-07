@@ -15,19 +15,23 @@ svg.append("rect")
     .attr("fill", "yellow");
 
 svg.append("path")
-    .attr("d", "M20 20")
+    .attr("stroke", "orange")
 
 
 /*
-The next command you'll add will tell the page to draw a horizontal line. The
-command is `H x`, where the `x` is the `x` coordinate where to stop drawing. In
-other words, this command draws a line from your current position (at (20, 20))
-to the given `x` value.
+You'll use four basic commands to draw the triangle, which will start from the
+point (20, 20) on your `svg` element.
 
-Edit the value for your `d` attribute so after the `M20 20` there's a space, then
-the command to draw a horizontal line to the `x` coordinate of `90`.
+As noted earlier, the `d` attribute takes a sequence of commands with coordinates.
+The coordinate values don't have any unit associated with them, they're interpreted
+in the user's local coordinate system.
 
-Note that if you were using the lowercase version of this command, you'd write it
-`h dx`. The page would draw a line `dx` units to the right (if  `dx` were
-positive, to the left if it were negative) starting from your current position.
+All commands can be written with a capital letter, followed by absolute
+coordinates on the page, or a lowercase letter, followed by relative movements.
+
+The "move" command uses `M x y` syntax, where `x` and `y` are coordinates on the
+`svg`. The command is like picking up your pen and placing the tip at that point
+to start drawing there.
+
+Chain the `d` attribute to your `path` and pass it a value of `"M 20 20"`.
 */
