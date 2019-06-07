@@ -18,11 +18,11 @@ Hiatus to explain a few SVG properties and shapes
 - [x] draw a path (0190-0240)
 
 Add map data
-- [x] mapPath JS lines 1-4
-- [x] popPath JS lines 5-7
+- [x] mapPath JS lines 1-4 (0250)
+- [x] popPath JS lines 5-7 (0260)
 
 Draw map
-- [x] HTML add footer with sources
+- [x] HTML add footer with sources (0270)
 - [ ] projection scale JS line 11
 - [ ] projection functionality JS lines 22-26
 - [ ] path functionality JS lines 27-29
