@@ -30,13 +30,13 @@ const path = d3.geoPath()
 // Create a group to hold the countries
 const g = svg.append("g");
 
-// Create promises to retrieve CSV population data and geoJSON topography data
-const getCSVData = d3.csv(popPath);
+// Create requests to retrieve JSON topography data and CSV population data
 const getJSONData = d3.json(mapPath);
+const getCSVData = d3.csv(popPath);
 
-Promise.all([getCSVData, getJSONData]).then(function(values) {
-  const population = values[0];
-  const json = values[1];
+Promise.all([getJSONData, getCSVData]).then(function(values) {
+  const json = values[0];
+  const population = values[1];
 
   // Find the max and min population values in the data to better understand it
   const popArray = population.map(d => +d.Population);
