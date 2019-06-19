@@ -30,6 +30,6 @@ for countries as they look on a sphere. The other critical piece of information
 your `path` variable needs is the projection, so it can draw those 3D boundaries
 onto your 2D `svg` the way you want them displayed.
 
-Chain the `.projection()` method to your `path` variable, and pass it the
-`projection` variable you declared in an earlier lesson.
+Chain the `.projection()` method to your `path` variable, and pass it your
+`projection` variable.
 */
