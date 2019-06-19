@@ -26,5 +26,15 @@ const path = d3.geoPath()
 
 
 /*
-[GROUP TO HOLD COUNTRIES]
+When you start generating the paths to draw the countries on your map, you could
+append them directly onto the `svg`. However, you're going to add pan and zoom
+functionality to the map in a later lesson. You're also going to add other
+elements, like a legend, which you won't want to target with the zoom behavior.
+
+To make this task easier when you get to it, you'll want to keep the paths
+separate from everything else. There's an SVG group (`g`) tag that can hold your
+paths and keep them organized from the other elements that will go on the `svg`.
+
+Using the `const` keyword, declare a variable named `g`, then use the `.append()`
+method on your `svg` to add a `"g"` element.
 */
