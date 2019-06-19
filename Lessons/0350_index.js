@@ -23,6 +23,8 @@ const projection = d3.geoMercator()
 const path = d3.geoPath()
     .projection(projection);
 
+// Create a group to hold the countries
+
 
 
 /*
