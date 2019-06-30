@@ -31,16 +31,12 @@ const getJSONData = d3.json(mapPath);
 const getCSVData = d3.csv(popPath);
 
 Promise.all([getJSONData, getCSVData]).then(function(values) {
+  const json = values[0];
 
 
 
 })
 /*
-The `values` parameter holds the resolved `Promises` for your `getJSONData` and
-`getCSVData` calls, and can be accessed using bracket notation with indexing.
-
-To make your code more readable, you'll want to store those values in separate
-variables. Using the `const` keyword, declare a variable named `json` and set it
-equal to the first item held in `values`. Make sure to write this inside the body
-of the callback function.
+Do the same thing for the CSV data, which is the second item in `values`, and
+name the variable `population`.
 */
