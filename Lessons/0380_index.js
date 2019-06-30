@@ -33,5 +33,14 @@ const getCSVData = d3.csv(popPath);
 
 
 /*
-[PROMISE.ALL]
+Your project uses two data sources, which you want to have access to in your
+code all at once. (Technically, the topography data include population estimates,
+but the World Bank numbers are from a known source and year).
+
+You may come across D3 example code online with nested `.json()` calls, but
+JavaScript's `Promise.all()` function allows you make all your requests together
+then returns one `Promise`.
+
+Start a new line of code with a `Promise.all()` call. Pass it an array containing
+the two variables with your `json` and `csv` requests.
 */
