@@ -40,11 +40,11 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
   // Find the max and min population values in the data to better understand it
   // const popArray = population.map(d => +d.Population);
-  const low = d3.min(+d.Population);  // d3.min(popArray);
-  const high = d3.max(+d.Population)  // d3.max(popArray);
+  const low = d3.min(+population.Population);  // d3.min(popArray);
+  const high = d3.max(+population.Population)  // d3.max(popArray);
   console.log("Min population is: " + low);  // 12,876 -> Nauru
   console.log("Max population is: " + high);  // 1,386,395,000 -> China
-  console.log(d3.extent(+d.Population));  // [12876, 1386395000]
+  console.log(d3.extent(+population.Population));  // [12876, 1386395000]
   // console.log(d3.extent(popArray));  // [12876, 1386395000]
 
   // Create a scale to map population value to a color
