@@ -40,6 +40,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
   console.log("Min population is: " + extent[0]);  // 12,876 -> Nauru
   console.log("Max population is: " + extent[1]);  // 1,386,395,000 -> China
 
+  // Create a scale to map population value to a color
+
 
 
 })
