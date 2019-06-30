@@ -55,7 +55,7 @@ the figures as strings. You need to first map them into an array as numbers befo
 you can analyze them.
 
 Using the `const` keyword, declare a variable named `popArray`, then apply the
-`.map()` method on `population`. Pass it a callback function with one parameter
+`.map()` method on `population`. Use an arrow callback function with one parameter
 `d` that returns the population figures changed to numbers (you can access them
 with `d.Population`). A shortcut to cast a string to a number in JavaScript is to
 add a `+` in front of the string, for example `+numAsString`.
