@@ -28,7 +28,7 @@ Draw map
 - [x] group to hold countries JS lines 30-32
 - [x] promises: setup JS lines 33-36
 - [x] promises: execute JS lines 37-40
-- [ ] threshold scale JS lines 41-59
+- [ ] threshold population scale JS lines 41-59
 - [ ] object to map ID to pop JS lines 60-65
 - [ ] topoJSON: countries features JS line 66
 - [ ] map functionality JS lines 73-89
