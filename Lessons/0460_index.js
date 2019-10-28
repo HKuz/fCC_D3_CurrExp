@@ -55,8 +55,11 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 })
 /*
-
+D3 conveniently has a number of color schemes already built into it. These include
+options for categorical, diverging, sequential, and cyclical color schemes. You'll
+use the yellow-orange-red sequential scheme.
 
 Chain the `.range()` method to the `.scaleThreshold()` and pass it the D3 yellow-
-orange-red scheme to get `8` colors.
+orange-red scheme to get `8` colors. The syntax for this is `d3.schemeYlOrRd[k]`
+where `k` is the number of colors, which can range from 3 to 9.
 */
