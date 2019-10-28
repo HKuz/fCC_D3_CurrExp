@@ -39,11 +39,11 @@ Tooltip
 - [ ] format JS line 12
 - [ ] setup JS lines 68-72
 - [ ] functionality JS lines 90-126
-- [ ] style CSS lines 10-end
+- [ ] CSS stylesheet style lines 14-end
 
 Pan and Zoom
 - [ ] functionality JS lines 127-139
-- [ ] style cursor grab CSS lines 3, 6-8
+- [ ] CSS stylesheet style cursor grab CSS lines 3, 6-8
 
 Legend
 - [ ] functionality JS lines 140-end
