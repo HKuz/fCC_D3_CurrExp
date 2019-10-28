@@ -48,9 +48,9 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 })
 /*
 The scale requires two pieces of information to work properly. First is what it
-should expect for input values, which is the *domain* of the scale. Next is what
-output values it needs to map the inputs to, which is the *range* of the scale.
-Then D3 can do the underlying math that creates the mapping.
+should expect for input values, which is the *domain* of the scale. Next it needs
+output values to map the inputs to, which is the *range* of the scale. Then D3
+can do the underlying math that creates the mapping.
 
 D3 has methods for both `.domain()` and `.range()`. For a threshold scale, the
 domain is an array that holds the threshold values, which will tell D3 how to
@@ -59,6 +59,6 @@ segment different population levels.
 Chain the `.domain()` method to the `.scaleThreshold()` and pass it an array with
 the following seven thresholds: `500000, 5000000, 10000000, 25000000, 50000000,
 100000000, 1000000000`. This loosely breaks your population data into buckets
-logarithmically, but using manual thresholds gives you complete control over how
-the data get divided up.
+logarithmically, but because you're using manual thresholds, you have complete
+control over how the data get divided up.
 */

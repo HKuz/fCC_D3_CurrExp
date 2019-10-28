@@ -57,11 +57,12 @@ example in an earlier lesson, the scale would take the values for the bars as
 input, then output the number of pixels the `height` of the bar needs to be on
 the screen.
 
-The `d3.scaleThreshold()` is one choice that works. You manually set the threshold
-values that create segments of the data. Note that one threshold will split your
-data into two buckets - values less than the threshold are the first bucket, the
-threshold and larger are the second bucket. Those buckets are then mapped to two
-output values - in this case it would be two color you select.
+The `d3.scaleThreshold()` is one choice that works here. You manually set the
+threshold values that create segments in the data. One threshold will split your
+data into two buckets - values less than the threshold are in the first bucket
+and values equal or greater than the threshold are in the second bucket. Those
+buckets are then mapped to two output values - in this case it would be two colors
+that you select.
 
 This scale allows you to take the wide range of continuous population values,
 split them into buckets, and map the buckets to a discrete set of colors.
