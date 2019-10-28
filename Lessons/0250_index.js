@@ -26,7 +26,7 @@ smaller files that are easier to use in a web application.
 
 There's a TopoJSON file named `naturalEarth50TopoJSON.json` in the project
 folder. Using the `const` keyword, create a variable named `mapPath` that holds
-the path to the file.
+the path to the file as a string.
 */
 
 // Setup
