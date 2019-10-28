@@ -30,12 +30,12 @@ Draw map
 - [x] promises: execute JS lines 37-40
 - [x] threshold population scale JS lines 41-59
 - [x] object to map ID to pop JS lines 60-65
-- [ ] topoJSON: countries features JS line 67
+- [x] topoJSON: countries features JS line 67
 - [ ] map functionality JS lines 73-89
 - [ ] CSS stylesheet .countries stroke
 
 Tooltip
-- [ ] HTML div to hold tooltip
+- [x] HTML div to hold tooltip
 - [ ] format JS line 12
 - [ ] setup JS lines 68-72
 - [ ] functionality JS lines 90-126
