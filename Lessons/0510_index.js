@@ -64,6 +64,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
   g.selectAll(".countries")
 
 
+
 })
 
 /*
@@ -73,7 +74,11 @@ page. The next step is to bind your data - the geographic features that describe
 the outline of each country, the name of the country, and its population - into
 SVG `path` elements to draw a map of the world.
 
-D3's `selection.data()` method is what binds the data to selected DOM elements.
+D3's `selection.data(dataset)` method is what binds the data to selected DOM
+elements. It counts and parses the items in the dataset. Any method that's chained
+after this one will apply to each item in the dataset. This means that you don't
+have to write any loops - D3 handles that for you!
+
 You wrote the selection code last lesson, so now chain the `.data()` method to
 that, and pass it the `countries` variable (which holds the geographic data).
 */
