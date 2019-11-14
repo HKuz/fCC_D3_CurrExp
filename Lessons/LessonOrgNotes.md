@@ -1,18 +1,21 @@
 Total lessons: ~130
 
 HTML setup (6)
+
 - [x] explain D3, title (0010)
 - [x] add script links to D3, topoJSON, and index script (0020-0040)
 - [x] H1 title (0050)
 - [x] div to hold map (0060)
 
 D3 basic setup (6)
+
 - [x] SVG height and width JS lines 8-10 (0070)
-- [x] SVG JS lines 17-21 (0080-0100)
+- [x] SVG JS lines 17-20 (0080-0100)
 - [x] style CSS lines 1-2 (0110)
 - [x] link CSS stylesheet to HTML (0120)
 
 Hiatus to explain a few SVG properties and shapes (12)
+
 - [x] overview of SVG, create a rectangle (0130)
 - [x] origin in upper-left, place elements with `x, y` coords, position rectangle (0140-0150)
 - [x] rectangle height/width (0160-0170)
@@ -20,38 +23,47 @@ Hiatus to explain a few SVG properties and shapes (12)
 - [x] draw a path (0190-0240)
 
 Add map data (2)
-- [x] mapPath JS lines 1-4 (0250)
-- [x] popPath JS lines 5-7 (0260)
 
-Draw map (~35)
+- [x] mapPath JS lines 1-3 (0250)
+- [x] popPath JS lines 5-6 (0260)
+
+Draw map (35)
+
 - [x] HTML add footer with sources (0270)
-- [x] projection scale JS line 11, functionality JS lines 22-26 (0280-0320)
-- [x] path functionality JS lines 27-29 (0330-0340)
-- [x] group to hold countries JS lines 30-32 (0350)
-- [x] promises: setup JS lines 33-36 (0360-0370)
-- [x] promises: execute JS lines 37-40 (0380-0410)
+- [x] projection scale JS line 11, functionality JS lines 22-25 (0280-0320)
+- [x] path functionality JS lines 27-28 (0330-0340)
+- [x] group to hold countries JS lines 30-31 (0350)
+- [x] promises: setup JS lines 33-35 (0360-0370)
+- [x] promises: execute JS lines 37-39 (0380-0410)
 - [x] threshold population scale JS lines 41-59 (0420-0460)
-- [x] object to map ID to pop JS lines 60-65 (0470-0480)
+- [x] object to map ID to pop JS lines 61-65 (0470-0480)
 - [x] topoJSON: countries features JS line 67 (0490)
-- [ ] map functionality JS lines 73-89 (0500-[0600])
-- [x] CSS stylesheet .countries stroke (NEXT_index.css)
+- [x] map functionality JS lines 74-90 (0500-0610)
+- [x] constant for idCode JS lines 14-15 (0590)
+- [x] CSS stylesheet .countries stroke (0550)
 
 Tooltip (~32)
-- [x] HTML div to hold tooltip (1) (NEXT_index.html)
-- [ ] format JS line 12 (1)
-- [ ] setup JS lines 69-72 (~3)
-- [ ] mouseover JS lines 91-100 (~7)
-- [ ] mousemove JS lines 101-115 (~6)
-- [ ] mouseout JS lines 116-126 (~7)
-- [ ] CSS stylesheet lines 14-end (~7)
+
+- [x] HTML div to hold tooltip (1) (0620)
+- [x] setup JS lines 69-72 (3) (0630-0650)
+- [x] CSS stylesheet .tooltip lines 14-21 (6) (0660-0710)
+- [x] mouseover JS lines 91-100 (7) (0720-0780)
+- [x] constant for format JS line 12 (1) (0800)
+- [ ] mousemove JS lines 101-115 (~6) (0790, 0810-[0860])
+- [ ] mouseout JS lines 116-126 (~7) ([0870-0930])
+- [x] CSS stylesheet .label lines 23-25 (1) (NEXT_index_7.css) ([0940])
 
 Pan and Zoom (~9)
-- [ ] functionality JS lines 127-140 (~7)
-- [ ] CSS stylesheet style cursor grab CSS lines 3, 6-8 (~2)
+
+- [ ] functionality JS lines 128-139 (~7)
+- [x] CSS stylesheet style cursor grab CSS lines 3, 6-8 (2) (NEXT_index_8-9.css)
 
 Legend (~28)
-- [ ] declare constants JS lines 141-154 (~9)
-- [ ] create rectangles for color bars JS lines 155-163 (~7)
-- [ ] add legend titles JS lines 164-171 (~6)
+
+- [ ] declare constants JS lines 141-153 (~9)
+- [ ] create rectangles for color bars JS lines 155-162 (~7)
+- [ ] add legend titles JS lines 164-170 (~6)
 - [ ] add tick marks JS lines 172-178 (~6)
+
+
 
