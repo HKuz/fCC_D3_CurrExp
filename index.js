@@ -79,6 +79,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
       .attr("d", path)
       // .style("stroke", "white")  // Moved to CSS
       .style("stroke-width", 0.5)
+      .style("opacity", 0.75)
       .style("fill", d => {
         const pop = popMap[d.properties[idCode]];
         if (pop) {
@@ -87,7 +88,6 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
           return "gray"
         }
       })
-      .style("opacity", 0.75)
       .on("mouseover", function(d) {
         tooltip.transition()
           .style("display", "inline")
