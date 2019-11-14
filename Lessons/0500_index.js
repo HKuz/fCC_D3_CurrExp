@@ -89,6 +89,6 @@ zero) to how many items are in the dataset, determines it needs a new `path` for
 each item, creates and appends it to the page.
 
 Let's get started! Using your `g` variable, chain the `selectAll()` statement to
-grab all elements with the class name `countries`. Recall that D3 uses similar
-selectors as CSS, so class names start with a period.
+grab all elements with the class name `countries`. Recall that D3 uses CSS
+selector syntax, so class names start with a period.
 */
