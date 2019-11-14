@@ -71,5 +71,14 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 })
 
 /*
+Next, you need to pass D3 the coordinates that the `path` will follow to draw the
+outline for each country, as well as give it information about what projection
+your map is using. Recall from an earlier lesson that it's the `d` attribute that
+holds the sequence of commands and coordinates to create the shape.
 
+You've already done the setup work for this in your `path` variable. It's storing
+the code to convert GeoJSON data into path coordinates based on a given projection.
+
+Chain another `.attr()` method, this time adding a `"d"` attribute and passing
+it your `path` variable.
 */
