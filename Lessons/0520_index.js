@@ -76,12 +76,12 @@ the name of the country and it's unique 3-letter ID code.
 
 You use D3's `enter()` method when you want D3 to create new elements based on
 your dataset. D3 compares the selection (the elements on the page with the class
-`countries`, which there are zero) to the number of items in the dataset, and
-then creates a placeholder new element if needed. After the `enter()` method, you
-chain the `.append("element")` method, to tell D3 which type of element to create.
-D3 will do this 241 times, once for each country.
+`countries`, which there are zero) to the number of items in the dataset (which
+is 241), and then creates a placeholder new element as needed. After the `enter()`
+method, you chain the `.append("element")` method, to tell D3 which type of
+element to create. D3 will do this 241 times, once for each country.
 
 Chain D3's `enter()` method after the `.data()` one, then chain the `.append()`
-method to that. Pass `.append()` the `"path"` argument to tell D3 you want a `path`
-element created for each country.
+method to that. Pass `.append()` the `"path"` argument to tell D3 you want a
+`path` element created for each country.
 */
