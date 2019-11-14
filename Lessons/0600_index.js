@@ -80,5 +80,41 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 })
 
 /*
+Remember that all code after the `.enter().append("path")` sequence is run for
+each item that D3 finds in the `countries` dataset. The dataset is in JSON format
+(made of nested arrays and objects), specifically it's an array of 241 objects
+that look like this:
 
+```
+{
+  geometry: {type: "Polygon", coordinates: [...]},
+  properties: {
+    ABBREV: "Zimb.",
+    ABBREV_LEN: 5,
+    ADM0_A3: "ZWE"
+    ...
+    NAME_LONG: "Zimbabwe",
+    ...  // many more properties
+  },
+  type: "Feature"
+}
+```
+
+The callback function has access to this object with the `d` parameter. You can
+use either dot or bracket notation to access properties, but note that you must
+use bracket notation when a property name is saved in a variable. For example,
+if you want to get the `NAME_LONG` value of "Zimbabwe", you could write
+`d.properties.NAME_LONG`.
+
+The first goal in the callback function is to get the population value for the
+country since that's what the fill color is based on. You need two pieces of
+information for this. First, you need to retrieve the `ADM0_A3` value from the
+data object to get the unique 3-letter country code - "ZWE" in the code example.
+Next, you use that code as the key in the `popMap` object to get the population
+figure (`popMap["ZWE"]`).
+
+Using the `const` keyword, declare a variable name `pop`. Next, retrieve the 3-
+letter country code from the GeoJSON data - it's under the `properties` key then
+under the `ADM0_A3` key. Use this value as the key to retrieve the population
+number from your `popMap` object. You can do this in one line of code.
 */
