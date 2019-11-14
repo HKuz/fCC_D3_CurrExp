@@ -2,17 +2,11 @@ svg {
   background-color: #ADD8E6;
 }
 
+.countries {
+  stroke: #fff;
+}
+
+
 /*
-As you saw previously with the `svg` element, when D3 adds elements to the DOM,
-you can target them with CSS rules just like any other element on the page.
 
-Some styles will dynamically change depending on how the user interacts with the
-map - those rules will stay in the script. One style that will remain static on
-our map is the color of the outline around each country. (You could declare this
-rule in the script, it depends on how you want to organize your code.)
-
-For a `path` element, you change this with the `stroke` property.
-
-Add a CSS rule that targets all elements with the class `countries`, and give
-them a `stroke` color of white (`#fff`).
 */
