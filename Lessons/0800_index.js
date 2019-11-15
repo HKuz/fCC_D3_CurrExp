@@ -15,8 +15,8 @@ const scale = svgWidth / (2 * Math.PI);
 /*
 Since the callback function will display the population value of a country, it's
 important to format the value so it's easier for a user to read. Numbers in the
-millions or billions without any thousands separator are difficult to read - think
-about 1000000 versus 1,000,000.
+millions or billions without any thousands separator take longer for people to
+interpret - think about 1000000 versus 1,000,000.
 
 D3 has a `d3.format()` function which takes a specifier that makes numbers human-
 readable.
