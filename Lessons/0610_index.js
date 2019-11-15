@@ -82,7 +82,9 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 /*
 The next step in the callback function is to return the `color` scale value for
-the population number: `color(pop)`.
+the population number: `color(pop)`. Your threshold scale maps a population value
+(depending on what threshold bucket it falls into) to one of 8 colors along the
+D3 yellow-orange-red color scheme.
 
 Unfortunately, there are only population numbers for 216 of the 241 countries,
 so you need to handle the case where `pop` is `undefined`.
