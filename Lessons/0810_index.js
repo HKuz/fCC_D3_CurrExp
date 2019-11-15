@@ -104,5 +104,20 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 })
 
 /*
+The first step in the callback function is to get the population number, since
+it's going to be one of the pieces of information displayed to a user in the
+tooltip box.
 
+This will be very similar to what you did in the callback function for
+`fill`, with one catch. Since some population values are `undefined`, you'll
+need to handle that case and set the variable to "NA". You're placing this value
+into HTML on the page, so this makes it something a human can easily understand.
+
+Using the `const` keyword, declare a variable named `pop2`. If the population
+value of the country exists, set the variable to `format(populationValue)`, and
+if it doesn't exist, set the variable to `"NA"`.
+
+Hint: this is a good use case for the ternary operator:
+
+`const example = condition ? valueIfTrue : valueIfFalse;`
 */
