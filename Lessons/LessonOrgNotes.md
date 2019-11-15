@@ -1,4 +1,5 @@
-Total lessons: ~130
+Total lessons: ~131
+Done: 96
 
 HTML setup (6)
 
@@ -39,24 +40,25 @@ Draw map (35)
 - [x] object to map ID to pop JS lines 61-65 (0470-0480)
 - [x] topoJSON: countries features JS line 67 (0490)
 - [x] map functionality JS lines 74-90 (0500-0610)
-- [x] constant for idCode JS lines 14-15 (0590)
 - [x] CSS stylesheet .countries stroke (0550)
+- [x] constant for idCode JS lines 14-15 (0590)
 
-Tooltip (~32)
+Tooltip (33)
 
-- [x] HTML div to hold tooltip (1) (0620)
-- [x] setup JS lines 69-72 (3) (0630-0650)
-- [x] CSS stylesheet .tooltip lines 14-21 (6) (0660-0710)
-- [x] mouseover JS lines 91-100 (7) (0720-0780)
-- [x] constant for format JS line 12 (1) (0800)
-- [ ] mousemove JS lines 101-115 (~6) (0790, 0810-[0860])
-- [ ] mouseout JS lines 116-126 (~7) ([0870-0930])
-- [x] CSS stylesheet .label lines 23-25 (1) (NEXT_index_7.css) ([0940])
+- [x] HTML div to hold tooltip (0620)
+- [x] setup JS lines 69-72 (0630-0650)
+- [x] CSS stylesheet .tooltip lines 14-21 (0660-0710)
+- [x] mouseover JS lines 91-100 (0720-0780)
+- [x] constant for format JS line 12 (0800)
+- [x] mousemove JS lines 101-115 (0790, 0810-0860)
+- [x] CSS stylesheet .label lines 23-25 (0870)
+- [x] mouseout JS lines 116-126 (0880-0940)
+
 
 Pan and Zoom (~9)
 
-- [ ] functionality JS lines 128-139 (~7)
-- [x] CSS stylesheet style cursor grab CSS lines 3, 6-8 (2) (NEXT_index_8-9.css)
+- [ ] functionality JS lines 128-139 (~7) ([0950-1010])
+- [x] CSS stylesheet style cursor grab CSS lines 3, 6-8 (2) (NEXT_index_8-9.css) ([1020-1030])
 
 Legend (~28)
 
@@ -64,6 +66,4 @@ Legend (~28)
 - [ ] create rectangles for color bars JS lines 155-162 (~7)
 - [ ] add legend titles JS lines 164-170 (~6)
 - [ ] add tick marks JS lines 172-178 (~6)
-
-
 
