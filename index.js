@@ -128,15 +128,15 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
   // Add map pan and zoom behavior
   const pad = 140;
 
+  function zoomed() {
+    g.attr("transform", d3.event.transform);
+  }
+
   svg.call(d3.zoom()
       .scaleExtent([1, 8])
       .translateExtent([[0, -pad], [svgWidth, svgHeight + pad]])
       .on("zoom", zoomed)
   );
-
-  function zoomed() {
-    g.attr("transform", d3.event.transform);
-  }
 
   // Add legend to show population color thresholds
   const w = svgWidth / 2 - 4;
