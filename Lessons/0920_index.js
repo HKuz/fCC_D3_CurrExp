@@ -117,7 +117,6 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
           .style("opacity", 0);
 
         // Revert country to original style
-        d3.select(this)
 
 
 
@@ -126,5 +125,5 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 })
 
 /*
-Change the country's `"opacity"` back to `0.75`.
+Use D3's `.select()` method to grab the current country.
 */

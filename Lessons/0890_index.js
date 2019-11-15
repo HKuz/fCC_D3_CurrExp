@@ -112,7 +112,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
       })
       .on("mouseout", function(d) {
         // Fade tooltip when mouse leaves
-        tooltip.transition()
+
 
 
       })
@@ -120,5 +120,9 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 })
 
 /*
-Next, chain a `.style()` method to this and reset the `"display"` back to `"none"`.
+This callback function will fade the tooltip from the user's view, then revert
+the country's styling back to the original settings. The code will look very
+similar to what you wrote for the `"mouseover"` handler.
+
+Start off by chaining a `.transition()` method to your tooltip selection.
 */

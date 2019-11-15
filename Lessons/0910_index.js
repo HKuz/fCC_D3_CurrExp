@@ -114,9 +114,6 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
         // Fade tooltip when mouse leaves
         tooltip.transition()
           .style("display", "none")
-          .style("opacity", 0);
-
-        // Revert country to original style
 
 
 
@@ -125,5 +122,5 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 })
 
 /*
-Use D3's `.select()` method to grab the current country.
+Now chain another `.style()` method, this time setting `"opacity"` back to `0`.
 */

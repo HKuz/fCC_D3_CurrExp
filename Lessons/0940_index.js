@@ -110,14 +110,22 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
           .style("left", (d3.event.pageX + 32) + "px")
           .style("top", (d3.event.pageY + 32) + "px");
       })
+      .on("mouseout", function(d) {
+        // Fade tooltip when mouse leaves
+        tooltip.transition()
+          .style("display", "none")
+          .style("opacity", 0);
+
+        // Revert country to original style
+        d3.select(this)
+          .style("opacity", 0.75)
 
 
+
+      })
 
 })
 
 /*
-You're down to the last event handler for the tooltip! Chain the final `.on()`
-method, this one for `"mouseout"` event, and pass it an empty callback function
-with a parameter named `d`. Make sure to use the `function` keyword since you'll
-be using `this` again in the function's body - an arrow function won't work here.
+Finally, change the country's `"stroke-width"` back to `0.5`.
 */

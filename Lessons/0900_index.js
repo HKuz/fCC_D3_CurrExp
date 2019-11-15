@@ -113,8 +113,6 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
       .on("mouseout", function(d) {
         // Fade tooltip when mouse leaves
         tooltip.transition()
-          .style("display", "none")
-
 
 
       })
@@ -122,5 +120,5 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 })
 
 /*
-Now chain another `.style()` method, this time setting `"opacity"` back to `0`.
+Next, chain a `.style()` method to this and reset the `"display"` back to `"none"`.
 */

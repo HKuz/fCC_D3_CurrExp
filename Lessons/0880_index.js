@@ -110,19 +110,14 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
           .style("left", (d3.event.pageX + 32) + "px")
           .style("top", (d3.event.pageY + 32) + "px");
       })
-      .on("mouseout", function(d) {
-        // Fade tooltip when mouse leaves
 
 
-
-      })
 
 })
 
 /*
-This callback function will fade the tooltip from the user's view, then revert
-the country's styling back to the original settings. The code will look very
-similar to what you wrote for the `"mouseover"` handler.
-
-Start off by chaining a `.transition()` method to your tooltip selection.
+You're down to the last event handler for the tooltip! Chain the final `.on()`
+method, this one for `"mouseout"` event, and pass it an empty callback function
+with a parameter named `d`. Make sure to use the `function` keyword since you'll
+be using `this` again in the function's body - an arrow function won't work here.
 */
