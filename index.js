@@ -99,14 +99,14 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
           .style("stroke-width", 2);
       })
       .on("mousemove", function(d) {
-        const pop = popMap[d.properties[idCode]] ? format(popMap[d.properties[idCode]]) : "NA";
+        const pop2 = popMap[d.properties[idCode]] ? format(popMap[d.properties[idCode]]) : "NA";
 
         // Create HTML string with country name and population info
         let dataPoint = "<div>" +
             "<strong><span class='label'>Country: </span></strong>" +
             d.properties.NAME + "<br />" +
             "<strong><span class='label'>Population: </span></strong>" +
-            pop +
+            pop2 +
             "</div>";
 
         tooltip.html(dataPoint)
@@ -116,8 +116,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
       .on("mouseout", function(d) {
         // Fade tooltip when mouse leaves
         tooltip.transition()
-          .style("display", "none");
-          .style("opacity", 0)
+          .style("display", "none")
+          .style("opacity", 0);
 
         // Revert country to original style
         d3.select(this)
