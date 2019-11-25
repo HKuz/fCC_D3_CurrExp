@@ -1,5 +1,5 @@
-Total lessons: ~131
-Done: 96
+Total lessons: ~130
+Done: 102
 
 HTML setup (6)
 
@@ -55,14 +55,14 @@ Tooltip (33)
 - [x] mouseout JS lines 116-126 (0880-0940)
 
 
-Pan and Zoom (~9)
+Pan and Zoom (8)
 
-- [ ] functionality JS lines 128-139 (~7) ([0950-1010])
-- [x] CSS stylesheet style cursor grab CSS lines 3, 6-8 (2) (NEXT_index_8-9.css) ([1020-1030])
+- [x] functionality JS lines 128-139 (6) (0950-1000)
+- [x] CSS stylesheet style cursor grab CSS lines 3, 6-8 (1010-1020)
 
 Legend (~28)
 
-- [ ] declare constants JS lines 141-153 (~9)
+- [ ] declare constants JS lines 141-153 (~9) (1030-[1120])
 - [ ] create rectangles for color bars JS lines 155-162 (~7)
 - [ ] add legend titles JS lines 164-170 (~6)
 - [ ] add tick marks JS lines 172-178 (~6)
