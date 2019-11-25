@@ -144,9 +144,9 @@ Well, since we didn't want the huge overhead of detailed geographic data for a
 'zoomed out' view of the world, that somewhat limits how much a user can zoom in
 and still see interesting detail.
 
-Fortunately, D3 has the `.scaleExtent([Z_0, Z_1])` method to limit the zoom levels.
-It takes an array of numbers where `Z_0` is the minimum allowed scale factor (the
-most zoomed out the map can get) and `Z_1` is the maximum allowed scale factor
+Fortunately, D3 has the `.scaleExtent([z0, z1])` method to limit the zoom levels.
+It takes an array of numbers where `z0` is the minimum allowed scale factor (the
+most zoomed out the map can get) and `z1` is the maximum allowed scale factor
 (the most zoomed in the map can get).
 
 Chain this method to the `d3.zoom()` function and pass it an array with limits
