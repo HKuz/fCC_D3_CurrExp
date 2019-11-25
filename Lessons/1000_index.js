@@ -140,9 +140,12 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 })
 
 /*
-The final step is to tie the `zoomed` function (with the transform added to the
-countries group) to the zoom behavior and event listeners that are now attached
-to the SVG. This is as simple as chaining an `.on()` function for `"zoom"` events,
-with the name of your `zoomed` function. (Just the name, don't actually call the
+The final step is to link the zoom behavior and event listeners that are attached
+to the SVG with the `zoomed` function. This tells D3 that the `g` holding the
+`paths` for the map's countries are the only selections that transform when the
+user performs any of the pan and zoom actions.
+
+This is as simple as chaining an `.on()` function for `"zoom"` events, with the
+name of your `zoomed` function. (Just pass it the name, don't actually call the
 function!)
 */
