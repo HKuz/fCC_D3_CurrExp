@@ -6,9 +6,11 @@ svg {
 }
 
 /*
-Adding pan and zoom functionality changes the behavior on the page - the user
-can zoom in, then "grab" the map and move it around. You can change the style of
-the cursor to a hand to indicate this is possible on the page.
+Two last lessons to adjust the style of the page.
+
+Pan and zoom functionality changes the behavior on the page - the user can zoom
+in, then "grab" the map and move it around. It's nice to use a different cursor
+style - a hand instead of a pointer - to indicate this is possible on the page.
 
 Add a rule under `svg` that sets the `cursor` to `grab`.
 */

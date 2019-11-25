@@ -7,8 +7,8 @@ svg {
 
 
 /*
-Finally, create a rule to style the cursor as a closed, grabbing hand to show the
-user when they are actively grabbing the map.
+Finally, create a rule to style the cursor as a closed, grabbing hand when the
+user is actively grabbing the map.
 
 You do this with a new rule for `svg:active` and set the `cursor` to `grabbing`.
 */
