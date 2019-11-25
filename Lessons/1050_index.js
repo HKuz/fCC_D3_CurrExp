@@ -148,5 +148,7 @@ Let's do the same thing for the `y` position of where the legend starts. Using
 the `const` keyword, declare a variable named `y_0`, and set it so the legend
 is `120` pixels above the bottom of the SVG viewing area. Remember that `y`
 positions of `0` are at the very top of the SVG, and ones set to the total height
-are at the very bottom.
+are at the very bottom. Combined with the `x_0` coordinate, this will put the
+legend in the ocean area north of Antarctica and to the south of Africa and
+Australia.
 */
