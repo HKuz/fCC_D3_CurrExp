@@ -122,13 +122,25 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
           .style("stroke-width", 0.5);
       });
 
-
+  // Add map pan and zoom behavior
 
 
 })
 
-
-
 /*
-PAN AND ZOOM
+The next piece of functionality you're going to add to your map will allow the
+user to zoom in and out and to pan around (basically drag the map around the
+viewing area - a useful feature after zooming in).
+
+Since panning and zooming are both popular user interactions - especially with
+maps - D3 has built-in methods that automatically handle events and transformations
+for you.
+
+To start, declare a variable named `pad` (using the `const` keyword) and set it
+to a value of `140`. This will be used to add padding in one of the D3 methods
+that will prevent the user from panning so much that the map is out of the viewing
+area.
+
+This code won't be chained to the `.countries` enter-append sequence, but stand
+on its own. That said, it will still be within the `Promise.all().then` call.
 */
