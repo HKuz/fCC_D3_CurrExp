@@ -142,5 +142,19 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 })
 
 /*
-LEGEND
+You're in the final phase of creating your map! The next series of lessons will
+walk you through adding a legend to the map. The legend will be a group of rectangles
+that are each colored with the same colors you used for the threshold scale, with
+text noting the population level.
+
+In general, you're going to create another `g` (group element) to hold the legend
+on the SVG, attach a sequence of rectangles filled with the threshold colors, and
+add tick marks with the population threshold values. You'll also use a linear
+scale to help evenly position the rectangles next to each other.
+
+To start, let's declare a few variables that will help position and size the
+legend how we want in on the SVG. Using the `const` keyword, declare a variable
+named `w` (for "width") and set it to half of the SVG width, minus `4`. You'll
+use this to tell D3 that you want the entire width of the scale to be a little
+less than the width of the SVG.
 */
