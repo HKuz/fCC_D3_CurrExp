@@ -1,5 +1,5 @@
 Total lessons: ~130
-Done: 102
+Done: 108
 
 HTML setup (6)
 
@@ -62,7 +62,8 @@ Pan and Zoom (8)
 
 Legend (~28)
 
-- [ ] declare constants JS lines 141-153 (~9) (1030-[1120])
+- [x] declare constants JS lines 141-149 (1030-1080)
+- [ ] create linear scale to position rectangles JS lines 151-153 (2) ([1090-1100])
 - [ ] create rectangles for color bars JS lines 155-162 (~7)
 - [ ] add legend titles JS lines 164-170 (~6)
 - [ ] add tick marks JS lines 172-178 (~6)
