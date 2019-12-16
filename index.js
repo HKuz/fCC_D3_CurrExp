@@ -148,6 +148,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
   const legend = svg.append("g")
       .attr("transform", "translate(" + x_0 + ", " + y_0 +")");
 
+  // Create a linear scale to help position legend colorblocks
   const x = d3.scaleLinear()
       .domain([1, length - 1])
       .rangeRound([w / length, w * (length - 1) / length]);
