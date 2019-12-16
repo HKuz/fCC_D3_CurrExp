@@ -152,13 +152,13 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 /*
 Next, chain an attribute for a `"transform"` to your `legend` group. The goal is
 to position the group within the SVG at the coordinate `(x_0, y_0)`. To do this,
-you need the the `"translate()"` function in CSS. Because the D3 `.attr()` method
+you need the `"translate()"` function in CSS. Because the D3 `.attr()` method
 takes its arguments as strings, you'll need to use string concatenation to combine
 the word "translate(" with the `x_0` variable, a comma, the `y_0` variable, and
-don't forget the closing parentheses!
+the closing parentheses.
 
-The `legend` group is now pinned to the location at `(x_0, y_0)` - think of this
-value as the new "origin" point for the legend. Any shape or text you add to the
-legend that needs to be positioned will start relative to this point. These
-elements won't use the upper-left corner of the SVG as their "origin" point.
+This code pins the `legend` group to the location at `(x_0, y_0)` - think of this
+point as the new "origin" for the legend. Going forward, any shape or text you
+add to the legend that you have to position will start relative to this point.
+These elements won't use the upper-left corner of the SVG as their "origin" point.
 */
