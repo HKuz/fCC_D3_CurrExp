@@ -159,6 +159,6 @@ lesson, this will be the index (0-7) for each of the eight rectangles. However,
 you don't need to start at `0`, because the scale will automatically output `0`
 for that index. Instead, you can start at `1`, and end at `length - 1`.
 
-Chain a `domain()` method to your `x` constant, and pass it an array with the
+Chain a `.domain()` method to your `x` constant, and pass it an array with the
 starting and ending indices for the scale.
 */
