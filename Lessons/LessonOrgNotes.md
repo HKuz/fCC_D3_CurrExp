@@ -1,4 +1,4 @@
-Total lessons: ~130
+Total lessons: 130
 Done: 108
 
 HTML setup (6)
