@@ -156,7 +156,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 /*
 Next, you need to declare the range of the scale, but you'll use D3's
-`.rangeRound()` method instead of `.range()` so it outputs integer pixel values.
+`.rangeRound()` method instead of `.range()` so it outputs integer coordinate
+values.
 
 Chain a `.rangeRound()` method to your `x` constant. It will take an array with
 two values. The first should be a calculation of the width you set for the legend
@@ -168,4 +169,9 @@ at the legend's origin.
 The second value in the array should be a calculation of the number of colors
 minus one (since you want index 7) times the width, all divided by the total
 number of colors.
+
+The constant `x` now holds a function you can call like `x(i)`, where `i` is an
+integer that represents the index value of a rectangle. It returns evenly-spaced
+values (based on the width `w` you set for the legend) that you'll use as the
+x coordinate for each colored rectangle.
 */
