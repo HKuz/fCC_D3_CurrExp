@@ -64,7 +64,7 @@ Legend (~28)
 
 - [x] declare constants JS lines 141-149 (1030-1080)
 - [x] create linear scale to position rectangles JS lines 151-154 (1090-1110)
-- [ ] create rectangles for color bars JS lines 156-163 (7) (1120-[1180])
+- [x] create rectangles for color bars JS lines 156-163 (1120-1180)
 - [ ] add legend titles JS lines 165-171 (6)
 - [ ] add tick marks JS lines 173-179 (6)
 
