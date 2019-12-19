@@ -1,5 +1,5 @@
 Total lessons: 130
-Done: 123
+Done: 124
 
 HTML setup (6)
 
@@ -66,5 +66,9 @@ Legend (~28)
 - [x] create linear scale to position rectangles JS lines 151-154 (1090-1110)
 - [x] create rectangles for color bars JS lines 156-163 (1120-1180)
 - [x] add legend titles JS lines 165-171 (1190-1240)
-- [ ] add tick marks JS lines 173-179 (6) ([1250-1300])
+- [ ] add tick marks JS lines 173-179 (6) (1250-[1300])
+
+Resources:
+
+- [Enter-Update-Exit resource](https://bost.ocks.org/mike/join/)
 
