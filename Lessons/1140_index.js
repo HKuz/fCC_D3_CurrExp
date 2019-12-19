@@ -160,8 +160,11 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 })
 
 /*
-[IN PROCESS]
-Instead of using the `.enter()` method you used with the `path` elements, you're
-going to apply the `.join()` method. This method simplifies the `.enter()`-
-`.update()`-`.exit()` methodology and is worth learning.
+You learned about the enter-update-exit methodology when you created the `path`
+elements. D3 also has a `.join()` method that simplifies things - it automatically
+figures out if you need an enter, update, or exit based on the data. It's a nice
+option to use when you don't need explicit control over the process.
+
+Chain a `.join()` method to your selection, and pass it the `"rect"` shapes that
+you want to bind to the color data.
 */
