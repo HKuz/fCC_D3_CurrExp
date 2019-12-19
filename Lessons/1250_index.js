@@ -176,11 +176,14 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 /*
 The final step to finish the legend is to add tick marks between each colored
-rectangle with the population threshold amount, so users know what population
-level a country has based on its color.
+rectangle with the population threshold amount. This is so users know what
+population level a country has based on its color.
 
-Fortunately, D3 has several functions that generate axes - these help display D3
-scales in a human-readable format. To start, chain a `.call()` method to your
-`legend` selection. Leave the parentheses empty for now, since `.call()` will
- hold all the axis code you'll write over the next few lessons.
+Fortunately, D3 has several functions that generate axes. These help display D3
+scales in a human-readable format by adding lines, ticks, and labels you can
+customize. To start, chain a `.call()` method to your `legend` selection. Leave
+the parentheses empty for now - it will hold all the axis code you'll write over
+the next few lessons. By using `.call()`, you'll invoke the axis-generator and
+formatting functions on your legend, similar to how you applied the zoom
+functionality.
 */
