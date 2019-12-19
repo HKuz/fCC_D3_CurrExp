@@ -131,9 +131,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-
-
-})
+});
 
 /*
 Now you're going to add the zoom behavior to the SVG. Using the `svg` selection,

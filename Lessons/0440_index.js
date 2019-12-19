@@ -44,7 +44,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
+
 /*
 You should see that the minimum value is 12,876 (Nauru) and the maximum value is
 1,386,395,000 (China). That's a huge spread, with five factors of ten between

@@ -5,6 +5,7 @@ const svgHeight = 700;
 const svg = d3.select("#map")
 
 
+
 /*
 The next step your script should append an `svg` element to the `div` you have
 selected in your `svg` variable. Fortunately, D3 has an `append()` method that

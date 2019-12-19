@@ -91,7 +91,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
       })
-})
+
+});
 
 /*
 Chain one more `.style()` method so the tooltip's `"opacity"` is set to a value

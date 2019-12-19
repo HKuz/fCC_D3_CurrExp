@@ -112,7 +112,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
       })
 
-})
+});
 
 /*
 The way the page is currently laid out, the tooltip `div` sits underneath the

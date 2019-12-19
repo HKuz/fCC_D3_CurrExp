@@ -78,7 +78,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
       })
 
-})
+});
 
 /*
 The next step in the callback function is to return the `color` scale value for

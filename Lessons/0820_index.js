@@ -106,7 +106,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
       })
 
-})
+});
 
 /*
 This and the next lesson will build up a string containing all the information

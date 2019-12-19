@@ -165,7 +165,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Recall that anything attached to the `legend` will use the origin point of `x_0`

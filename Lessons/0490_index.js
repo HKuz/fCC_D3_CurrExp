@@ -60,7 +60,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 It's time to put the TopoJSON library to work! An earlier lesson explained that

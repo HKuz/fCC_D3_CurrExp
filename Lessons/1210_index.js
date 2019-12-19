@@ -166,7 +166,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Next, chain an attribute method for `"fill"` and pass it a value of `"black"` to

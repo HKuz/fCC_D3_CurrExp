@@ -140,7 +140,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Using the `const` keyword, declare a variable named `x_0`, and set it to half

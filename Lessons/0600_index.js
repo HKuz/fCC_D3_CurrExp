@@ -77,7 +77,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
       })
 
-})
+});
 
 /*
 Remember that all code after the `.enter().append("path")` sequence is run for

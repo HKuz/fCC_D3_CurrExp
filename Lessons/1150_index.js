@@ -158,7 +158,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 You're now at the part of the code where D3 will apply every method you now chain

@@ -195,6 +195,6 @@ introduced the basic building blocks for how D3 works, but there are so many mor
 applications for D3.
 
 For more practice going forward, think of ways you can further customize this map,
-or how you can create a visualization using data from a personal project. Good
-luck and happy coding!
+make it more responsive, or how you can create a visualization using data from a
+personal project. Good luck and happy coding!
 */

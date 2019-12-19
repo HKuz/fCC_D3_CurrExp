@@ -125,7 +125,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
   // Add map pan and zoom behavior
 
 
-})
+
+});
 
 /*
 The next piece of functionality you're going to add to your map will allow the

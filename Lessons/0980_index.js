@@ -135,7 +135,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
   );
 
-})
+});
 
 /*
 One of the lessons at the beginning of this project discussed how we chose mid-

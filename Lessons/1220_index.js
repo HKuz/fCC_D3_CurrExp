@@ -167,7 +167,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Next, chain another attribute, this time for `"text-anchor"`, and set it to

@@ -146,7 +146,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Just as you created a group (`g`) element to hold the paths for your country

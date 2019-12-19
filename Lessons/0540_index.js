@@ -68,7 +68,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Next, you need to pass D3 the coordinates that the `path` will follow to draw the

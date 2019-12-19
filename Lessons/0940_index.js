@@ -124,7 +124,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
       })
 
-})
+});
 
 /*
 Finally, change the country's `"stroke-width"` back to `0.5`.

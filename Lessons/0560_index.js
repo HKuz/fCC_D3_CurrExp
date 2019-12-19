@@ -69,7 +69,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 The next styles you set will change dynamically, depending how the user interacts

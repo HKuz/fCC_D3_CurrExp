@@ -67,7 +67,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Now you have `path` elements ready to go for every country. The rest of the code

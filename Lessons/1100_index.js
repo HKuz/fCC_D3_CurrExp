@@ -151,7 +151,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Next, you need to declare the `.domain()` of the scale. As noted in the last

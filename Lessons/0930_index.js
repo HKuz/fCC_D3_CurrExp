@@ -123,7 +123,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
       })
 
-})
+});
 
 /*
 Change the country's `"opacity"` back to `0.75`.

@@ -94,7 +94,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
       })
-})
+
+});
 
 /*
 Chain a `.style()` method to the country selection so the `"opacity"` is set to

@@ -139,7 +139,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 You're in the final phase of creating your map! The next series of lessons will

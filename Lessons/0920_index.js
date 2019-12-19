@@ -122,7 +122,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
       })
 
-})
+});
 
 /*
 Use D3's `.select()` method to grab the current country.

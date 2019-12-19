@@ -71,7 +71,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Next, you're going to dynamically color each country based on its population.

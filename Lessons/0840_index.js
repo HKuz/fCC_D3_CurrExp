@@ -111,7 +111,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
       })
 
-})
+});
 
 /*
 Now the HTML with the country's information is ready to go onto the page. D3 has

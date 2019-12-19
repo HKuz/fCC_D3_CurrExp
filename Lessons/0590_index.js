@@ -96,4 +96,4 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
       })
 
-})
+});

@@ -96,7 +96,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
       })
-})
+
+});
 
 /*
 Chain one more `.style()` method so the `"stroke-width"` is set to a value of

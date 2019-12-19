@@ -8,7 +8,9 @@ const mapPath = "./naturalEarth50TopoJSON.json";
 
 /*
 As noted in the second comment, the map data source is Natural Earth. The datasets
-are available to use in the public domain.
+are available to use in the public domain. We used the site mapshaper.org to
+convert shape (`.shp`) and database (`.dbf`) files into a TopoJSON format that
+D3 supports.
 
 The "50" in the TopoJSON name is a reference to the level of detail (1:50m scale)
 and is the middle option. It's a compromise between having enough country

@@ -56,7 +56,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 The next task is to create a helper object that will make it easier to retrieve

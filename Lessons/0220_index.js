@@ -19,6 +19,7 @@ svg.append("path")
     .attr("d", "M 20 20")
 
 
+
 /*
 The next command you'll add will draw a horizontal line. The command is `H x`,
 where the `x` is the `x` coordinate where to stop drawing. In other words, this

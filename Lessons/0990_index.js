@@ -136,7 +136,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
   );
 
-})
+});
 
 /*
 Just like you can put limits on the zoom behavior, you can add limits to panning

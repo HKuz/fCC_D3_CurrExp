@@ -94,7 +94,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
       })
-})
+
+});
 
 /*
 Next, you're going to change the style of the selected country. Use D3's

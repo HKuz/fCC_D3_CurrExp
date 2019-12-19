@@ -34,7 +34,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
+
 /*
 The `values` parameter holds the resolved `Promises` for your `getJSONData` and
 `getCSVData` calls, and can be accessed using bracket notation with indexing.

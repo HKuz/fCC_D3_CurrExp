@@ -156,7 +156,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Bind the `color.range()` data to the selection with the `.data()` method. Recall

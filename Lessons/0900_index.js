@@ -115,9 +115,10 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
         tooltip.transition()
 
 
+
       })
 
-})
+});
 
 /*
 Next, chain a `.style()` method to this and reset the `"display"` back to `"none"`.

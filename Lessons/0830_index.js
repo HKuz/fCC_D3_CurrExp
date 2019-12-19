@@ -108,7 +108,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
       })
 
-})
+});
 
 /*
 We added the next line of HTML for you. This time, concatenate the population

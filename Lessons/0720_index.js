@@ -87,7 +87,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 The tooltip code will illustrate how to add event handlers to your visualization.

@@ -89,7 +89,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
       })
-})
+
+});
 
 /*
 Next, chain a `.style()` method to the transition to change the tooltip's

@@ -117,7 +117,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
       })
 
-})
+});
 
 /*
 This callback function will fade the tooltip from the user's view, then revert

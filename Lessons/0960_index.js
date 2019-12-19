@@ -127,8 +127,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-
-})
+});
 
 /*
 Before you write out the code, this is the general idea of what you're doing. First,

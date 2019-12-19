@@ -27,8 +27,12 @@ properly on your two-dimensional `svg`. A map **projection** is a method for
 making this conversion, and there are many different options.
 
 D3 supports a variety of different projections - you normally choose the one that
-best suits your project's needs. For this map, you'll use a classic Mercator
-projection.
+best suits your project's needs. Projections have to make adjustments to convert
+3D coordinates onto a 2D surface, so they all have some form of distortion. They
+generally try to preserve one aspect - some keep areas accurate, some distance,
+and some the angles between places (good for nautical navigation).
+
+For this map, you'll use a classic Mercator projection.
 
 Using the `const` keyword, declare a variable named `projection` and set it to
 `d3.geoMercator()`.

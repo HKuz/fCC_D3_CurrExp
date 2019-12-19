@@ -18,6 +18,7 @@ svg.append("path")
     .attr("stroke", "orange")
 
 
+
 /*
 You'll use four basic commands to draw the triangle, which will start from the
 point (20, 20) on your `svg` element.

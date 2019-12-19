@@ -35,7 +35,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
+
 /*
 Do the same thing for the CSV data, which is the second item in `values`, and
 name the variable `population`.

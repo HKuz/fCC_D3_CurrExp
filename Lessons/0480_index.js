@@ -57,8 +57,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-
-})
+});
 
 /*
 Recall that the CSV data you imported holds the population information for each

@@ -39,7 +39,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
+
 /*
 D3 provides both `d3.max()` and `d3.min()` functions you could apply here to see
 the range of populations in the data. However, there's also `d3.extent()` function

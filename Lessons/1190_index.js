@@ -164,12 +164,12 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 The next batch of code you write will add text for the title of the legend. It
 will apply several attributes to position and style the text, then the text
 itself.
 
-To start, `.append()` a `"text"` element to the `legend`.
+To start, `.append()` a `"text"` element to the `legend` selection.
 */

@@ -12,9 +12,10 @@ This information, along with various metadata, is saved in a specific form of
 `JSON` - either GeoJSON or TopoJSON.
 
 GeoJSON is a data structure that holds geographic features. They can include
-points (such as a city), lines (a street), and multipolygons (a boundary) -
-including that feature's coordinates. You'll use the sequence of coordinates
-that describe each country's boundary to draw the `path` elements on your `svg`.
+points (such as a city), lines (a street), and multipolygons (a boundary) among
+other shapes. The also include that feature's coordinates. You'll use the sequence
+of coordinates that describe each country's boundary to draw the `path` elements
+on your `svg`.
 
 (Don't worry, you won't need to manually create these `paths` like you did in
 the prior lessons- D3 has all the built-in functionality to extract the data and

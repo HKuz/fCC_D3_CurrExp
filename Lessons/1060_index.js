@@ -142,7 +142,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 The legend is based on the number of colors you're using in your threshold scale.

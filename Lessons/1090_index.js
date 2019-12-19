@@ -150,7 +150,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 This next batch of code will create a linear scale that you'll use when you add

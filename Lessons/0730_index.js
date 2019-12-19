@@ -89,7 +89,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
       })
-})
+
+});
 
 /*
 This callback will transition the tooltip's style so it's visible to the user and

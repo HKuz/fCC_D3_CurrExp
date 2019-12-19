@@ -38,7 +38,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
+
 /*
 Often with data visualizations, you'll want to size or color items based on the
 underlying values in the dataset. For example, in a bar chart, you want the height

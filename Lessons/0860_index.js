@@ -113,7 +113,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
       })
 
-})
+});
 
 /*
 Now chain a `.style()` method to set the `"top"` offset, also re-positioning the

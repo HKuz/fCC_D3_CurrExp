@@ -65,7 +65,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Data visualizations are all about mapping data into visuals. D3 gives you the

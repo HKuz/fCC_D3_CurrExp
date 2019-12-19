@@ -1,5 +1,5 @@
 Total lessons: 130
-Done: 124
+Done: 130
 
 HTML setup (6)
 
@@ -57,18 +57,25 @@ Tooltip (33)
 
 Pan and Zoom (8)
 
-- [x] functionality JS lines 128-139 (6) (0950-1000)
+- [x] functionality JS lines 128-139 (0950-1000)
 - [x] CSS stylesheet style cursor grab CSS lines 3, 6-8 (1010-1020)
 
-Legend (~28)
+Legend (28)
 
 - [x] declare constants JS lines 141-149 (1030-1080)
 - [x] create linear scale to position rectangles JS lines 151-154 (1090-1110)
 - [x] create rectangles for color bars JS lines 156-163 (1120-1180)
 - [x] add legend titles JS lines 165-171 (1190-1240)
-- [ ] add tick marks JS lines 173-179 (6) (1250-[1300])
+- [x] add tick marks JS lines 173-179 (1250-1300)
+
+Final Clean up:
+
+- [x] Spell check lesson instruction text
+- [x] Add trailing semi-colons
+- [x] Make spacing consistent
 
 Resources:
 
 - [Enter-Update-Exit resource](https://bost.ocks.org/mike/join/)
+
 

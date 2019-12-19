@@ -155,7 +155,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Now it's time to generate the colored rectangles for the legend. This code will

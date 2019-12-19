@@ -45,7 +45,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
+
 /*
 The scale requires two pieces of information to work properly. First is what it
 should expect for input values, which is the *domain* of the scale. Next it needs

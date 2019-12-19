@@ -168,7 +168,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Chain a final attribute method for `"font-weight"` and set it to `"bold"`.

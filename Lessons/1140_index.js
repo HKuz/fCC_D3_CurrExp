@@ -157,7 +157,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 You learned about the enter-update-exit methodology when you created the `path`

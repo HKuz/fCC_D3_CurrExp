@@ -53,7 +53,8 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
+
 /*
 D3 conveniently has a number of color schemes already built into it. These include
 options for categorical, diverging, sequential, and cyclical color schemes. You'll

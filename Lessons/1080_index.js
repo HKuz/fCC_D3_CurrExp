@@ -147,7 +147,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Next, chain an attribute for a `"transform"` to your `legend` group. The goal is

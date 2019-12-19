@@ -160,7 +160,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Chain another attribute, this time to set the `"height"` for each rectangle. Pass

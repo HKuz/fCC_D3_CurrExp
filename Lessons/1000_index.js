@@ -137,7 +137,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
   );
 
-})
+});
 
 /*
 The final step is to link the zoom behavior and event listeners that are attached

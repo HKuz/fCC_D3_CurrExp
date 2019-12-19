@@ -101,7 +101,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
       })
 
-})
+});
 
 /*
 The first step in the callback function is to get the population number, since

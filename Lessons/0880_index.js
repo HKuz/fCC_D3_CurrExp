@@ -113,7 +113,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 You're down to the last event handler for the tooltip! Chain the final `.on()`

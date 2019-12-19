@@ -19,6 +19,7 @@ svg.append("path")
     .attr("d", "M 20 20 H 90")
 
 
+
 /*
 The next command will tell the page to draw a vertical line. This command is
 similar to drawing a horizontal line. The capital letter, or absolute coordinate

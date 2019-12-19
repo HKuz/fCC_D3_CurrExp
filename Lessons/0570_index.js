@@ -70,7 +70,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Chain another `.style()` method, this time setting the `"opacity"` to a value of

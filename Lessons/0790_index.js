@@ -97,7 +97,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Nice work finishing the `"mouseover"` event handler! Two more to go - now chain

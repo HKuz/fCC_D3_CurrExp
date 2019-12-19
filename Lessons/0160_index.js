@@ -12,6 +12,7 @@ svg.append("rect")
     .attr("y", 300)
 
 
+
 /*
 Chain another `.attr()` method to add the `"width"` attribute to the rectangle.
 Give it a value of `200`.

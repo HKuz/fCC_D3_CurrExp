@@ -161,7 +161,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Finally, chain one more attribute, this time to set the `"fill"` color. This one

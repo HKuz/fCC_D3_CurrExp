@@ -141,7 +141,7 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Let's do the same thing for the `y` position of where the legend starts. Using

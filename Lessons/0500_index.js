@@ -64,22 +64,24 @@ Promise.all([getJSONData, getCSVData]).then(function(values) {
 
 
 
-})
+});
 
 /*
 Finally, all the pieces are in place to draw the map. In an earlier lesson, you
 appended a `g` element (for "group") to the SVG to hold the countries, which is
-stored in the constant `g`. You'll use that element here with the D3 `selectAll()`
-method to grab all the map's countries by their class, which will be `countries`.
+stored in the constant `g`. You'll use that selection here with D3's `selectAll()`
+method to grab all the map's countries by their class, which will be `"countries"`.
 
 You may be wondering, 'but there aren't any countries on the map yet, why am I
 selecting them?' And you're right - the code returns an empty selection. But this
 and the next few lessons will get to the heart of how D3 works to create data
 visualizations.
 
-The general idea is that you select an SVG shape or element, feed D3 the data,
-then based on the items in the dataset, D3 determines how many shapes/elements
-to create and put on the page to generate the data visualization.
+The general idea is that you select SVG shapes or elements and feed D3 the data
+by binding it to the elements. Then, based on the items in the dataset, D3
+determines how many shapes/elements to create and put on the page to generate the
+data visualization. This is one part of a broader create/update/remove sequence
+that D3 uses to match data to elements representing it in the DOM.
 
 Here, you're first selecting elements with the class name `countries` - these
 will be `path` elements that form the outline of each country. Next you'll bind
